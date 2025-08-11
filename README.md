@@ -29,3 +29,24 @@ staff to effectively utilize the system.
 **Continuous Monitoring and Improvement**  
       Monitor system performance, gather feedback, and regularly update the DSS to 
 maintain its effectiveness and relevance. 
+
+
+
+
+
+
+The project utilizes diverse datasets for disaster prediction, including: 
+
+**Earthquake Data**: Historical and real-time seismic activity data, including 
+magnitudes, depths, and locations. Includes features such as magnitude, depth, 
+latitude, longitude, etc 
+
+**Flood Data**: Records of past flood events, precipitation levels, and water levels. 
+Contains information on monsoon intensity, urbanization, climate change, and flood 
+probability. 
+
+**Tornado Data**: Information on tornado occurrences, intensities, and affected areas. 
+Features such as magnitude, state, injuries, and fatalities 
+
+**Tsunami Data**: Tsunami records, wave heights, and affected regions. Comprises 
+earthquake magnitude, depth, and tsunami intensity.
