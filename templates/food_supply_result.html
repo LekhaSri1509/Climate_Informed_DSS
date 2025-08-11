@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Food Supply Analysis Result</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link
+      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=MuseoModerno:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .font1 {
+        font-family: "Outfit", sans-serif;
+      }
+      .green {
+        color: green;
+      }
+      .yellow {
+        color: yellow;
+      }
+      .orange {
+        color: orange;
+      }
+      .red {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      class="h-16 shadow-2xl w-full font1 text-yellow-600 font-semibold flex justify-between text-xl items-center"
+    >
+      <div
+        onclick="window.location.href='{{ url_for('main_dashboard') }}'"
+        class="flex items-center ml-3 cursor-pointer"
+      >
+        <img
+          class="h-10"
+          src="{{ url_for('static', filename='assets/logo.png') }}"
+        />
+        Climate Informed DSS
+      </div>
+      <div>
+        <a
+          href="{{ url_for('logout') }}"
+          class="btn bg-white border-2 border-yellow-500 text-yellow-600 rounded-full mr-3"
+          >Logout</a
+        >
+      </div>
+    </div>
+    <div class="text-yellow-600 font1">
+      <div class="container">
+        <h1 class="text-center text-3xl font1 font-semibold pt-4">
+          Food Supply Analysis Result
+        </h1>
+
+        <p><strong>Disaster Type:</strong> {{ disaster_type }}</p>
+        <p>
+          <strong>Location:</strong> Latitude: {{ latitude }}, Longitude: {{
+          longitude }}
+          <br />
+          <strong>Nearest Location:</strong>
+          <span id="location-name">Loading...</span>
+        </p>
+        <p>
+          <strong>Alert Level:</strong>
+          <span class="{{ alert_level | lower }}">{{ alert_level }}</span>
+        </p>
+        <p><strong>Food Required:</strong> {{ food_required }} kg</p>
+        <p>
+          <strong>Expected Delivery Time:</strong> {{ delivery_time }} hours
+        </p>
+        <p>
+          <strong>Trucks Needed:</strong> {{ trucks_needed | round }}
+          <!-- Rounded off value -->
+        </p>
+        <p>
+          <strong>Personnel Needed:</strong> {{ personnel_needed | round }}
+          <!-- Rounded off value -->
+        </p>
+
+        <!-- Analyze Another Region Button -->
+        <a
+          href="/analyze_food_supply"
+          class="btn bg-yellow-600 text-white w-full rounded-full mt-4"
+          >Analyze Another Region</a
+        >
+
+        <!-- Back to Dashboard Button -->
+        <a
+          href="{{ url_for('main_dashboard') }}"
+          class="btn bg-white border-2 border-yellow-500 text-yellow-600 w-full rounded-full mt-4"
+          >Back to Dashboard</a
+        >
+      </div>
+    </div>
+
+    <!-- Script to perform reverse geocoding to get the nearest location from latitude and longitude -->
+    <script>
+      const latitude = {{ latitude }};
+      const longitude = {{ longitude }};
+      const locationNameElement = document.getElementById("location-name");
+
+      // Perform reverse geocoding to get the nearest location using OpenStreetMap Nominatim API
+      fetch(`https://nominatim.openstreetmap.org/reverse?format=json&lat=${latitude}&lon=${longitude}`)
+        .then(response => response.json())
+        .then(data => {
+          if (data && data.address) {
+            const locationName = data.address.city || data.address.town || data.address.village || data.address.country;
+            locationNameElement.innerText = locationName || "Unknown Location";
+          } else {
+            locationNameElement.innerText = "Unknown Location";
+          }
+        })
+        .catch(() => {
+          locationNameElement.innerText = "Error fetching location";
+        });
+    </script>
+  </body>
+</html>

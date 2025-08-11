@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link
+      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=MuseoModerno:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .font1 {
+        font-family: "Outfit", sans-serif;
+        font-optical-sizing: auto;
+      }
+      body {
+        background-color: #f8f9fa;
+        height: 100vh;
+        margin: 0;
+      }
+
+      .box {
+        height: 500px !important;
+      }
+      .img1 {
+        position: absolute;
+        top: 62px;
+        height: 500px;
+      }
+      .opac {
+        opacity: 20%;
+      }
+      .br {
+        border-bottom-left-radius: 120px;
+        border-bottom-right-radius: 120px;
+      }
+
+      .grid1 {
+        height: 250px !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="w-full h-full">
+      <div
+        class="h-16 shadow-2xl w-full font1 text-yellow-600 font-semibold flex justify-between text-xl items-center"
+      >
+        <div
+          onclick="window.location.href='{{ url_for('main_dashboard') }}'"
+          class="flex items-center ml-3 cursor-pointer"
+        >
+          <img
+            class="h-10"
+            src="{{ url_for('static', filename='assets/logo.png') }}"
+          />
+          Climate Informed DSS
+        </div>
+        <div>
+          <a
+            href="{{ url_for('logout') }}"
+            class="btn bg-white border-2 border-yellow-500 text-yellow-600 rounded-full mr-3"
+            >Logout</a
+          >
+        </div>
+      </div>
+
+      <div class="box">
+        <div
+          class="bg-gradient-to-b from-yellow-500 to-yellow-600 text-white h-full br flex justify-center items-center"
+        >
+          <img
+            class="img1 w-full br opac w-1/2 h-full"
+            src="{{ url_for('static', filename='assets/bg-1.jpg') }}"
+          />
+          <span class="text-5xl font-semibold font1 z-20"
+            >Disaster Management Dashboard</span
+          >
+        </div>
+      </div>
+
+      <div class="flex justify-center w-full h-full mt-8">
+        <div class="grid grid-cols-2 gap-8 w-3/4">
+          <div
+            onclick="window.location.href='{{ url_for('predict_disaster') }}'"
+            class="grid1 cursor-pointer border-t-2 border-l-2 border-b-4 border-r-2 border-yellow-600 rounded font1 text-yellow-600 text-3xl hover:text-white transition ease-in-out delay-150 hover:bg-yellow-600 hover:-translate-y-1 hover:scale-110 duration-300"
+          >
+            Predict Disaster
+          </div>
+
+          <div
+            onclick="window.location.href='{{ url_for('analyze_disasters') }}'"
+            class="grid1 cursor-pointer border-t-2 border-l-2 border-b-4 border-r-2 border-yellow-600 rounded font1 text-yellow-600 text-3xl hover:text-white transition ease-in-out delay-150 hover:bg-yellow-600 hover:-translate-y-1 hover:scale-110 duration-300"
+          >
+            Analyze Past Disaster
+          </div>
+
+          <!-- Analyze Food Supply Section -->
+          <div
+            onclick="window.location.href='{{ url_for('analyze_food_supply') }}'"
+            class="grid1 cursor-pointer border-t-2 border-l-2 border-b-4 border-r-2 border-yellow-600 rounded font1 text-yellow-600 text-3xl hover:text-white transition ease-in-out delay-150 hover:bg-yellow-600 hover:-translate-y-1 hover:scale-110 duration-300"
+          >
+            Analyze Food Supply
+          </div>
+
+          <!-- Emergency Contacts Section -->
+          <div
+            onclick="window.location.href='{{ url_for('emergency_contacts') }}'"
+            class="grid1 cursor-pointer border-t-2 border-l-2 border-b-4 border-r-2 border-yellow-600 rounded font1 text-yellow-600 text-3xl hover:text-white transition ease-in-out delay-150 hover:bg-yellow-600 hover:-translate-y-1 hover:scale-110 duration-300"
+          >
+            Emergency Contacts
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

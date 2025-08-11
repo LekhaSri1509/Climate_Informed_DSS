@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Analyze Food Supply</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link
+      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=MuseoModerno:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .font1 {
+        font-family: "Outfit", sans-serif;
+        font-optical-sizing: auto;
+      }
+      .submit-btn {
+        background-color: #fbbf24;
+        color: white;
+        border-radius: 10px;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      class="h-16 shadow-2xl w-full font1 text-yellow-600 font-semibold flex justify-between text-xl items-center"
+    >
+      <div
+        onclick="window.location.href='{{ url_for('main_dashboard') }}'"
+        class="flex items-center ml-3 cursor-pointer"
+      >
+        <img
+          class="h-10"
+          src="{{ url_for('static', filename='assets/logo.png') }}"
+        />
+        Climate Informed DSS
+      </div>
+      <div>
+        <a
+          href="{{ url_for('logout') }}"
+          class="btn bg-white border-2 border-yellow-500 text-yellow-600 rounded-full mr-3"
+          >Logout</a
+        >
+      </div>
+    </div>
+    <div class="text-yellow-600 font1">
+      <div class="container">
+        <h1 class="text-center text-3xl font1 font-semibold pt-4">
+          Analyze Food Supply for Disaster-Affected Region
+        </h1>
+
+        <form method="POST" action="/analyze_food_supply">
+          <div class="form-group">
+            <label for="latitude">Latitude:</label>
+            <input
+              type="text"
+              id="latitude"
+              name="latitude"
+              class="form-control"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="longitude">Longitude:</label>
+            <input
+              type="text"
+              id="longitude"
+              name="longitude"
+              class="form-control"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="disaster_type">Disaster Type:</label>
+            <select
+              id="disaster_type"
+              name="disaster_type"
+              class="form-control"
+              required
+            >
+              <option value="earthquake">Earthquake</option>
+              <option value="flood">Flood</option>
+              <option value="tornado">Tornado</option>
+              <option value="tsunami">Tsunami</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="severity_level">Severity Level:</label>
+            <select
+              id="severity_level"
+              name="severity_level"
+              class="form-control"
+              required
+            >
+              <option value="low">Low</option>
+              <option value="medium">Medium</option>
+              <option value="high">High</option>
+              <option value="critical">Critical</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="total_population_affected"
+              >Total Population Affected:</label
+            >
+            <input
+              type="number"
+              id="total_population_affected"
+              name="total_population_affected"
+              class="form-control"
+              required
+            />
+          </div>
+
+          <input type="submit" class="btn submit-btn" value="Submit" />
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

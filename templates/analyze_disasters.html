@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Analyze Past Disasters</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link
+      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      type="text/javascript"
+      src="https://www.gstatic.com/charts/loader.js"
+    ></script>
+
+    <style>
+      .font1 {
+        font-family: "Outfit", sans-serif;
+      }
+      #piechart,
+      #linechart-monsoon,
+      #linechart-urbanization,
+      #barchart-climate,
+      #linechart {
+        width: 100%;
+        max-width: 900px;
+        height: 500px;
+        margin: auto;
+      }
+    </style>
+
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawCharts);
+
+      function drawCharts() {
+          var disasterType = '{{ disaster_type }}';
+
+          // Pie Chart for alert levels
+          var pieData = google.visualization.arrayToDataTable([
+              ['Alert Level', 'Count'],
+              ['Green', {{ data['Green'] }}],
+              ['Yellow', {{ data['Yellow'] }}],
+              ['Orange', {{ data['Orange'] }}],
+              ['Red', {{ data['Red'] }}]
+          ]);
+
+          var pieOptions = {
+              title: disasterType === 'flood' ? 'Flood Alert Levels' : disasterType === 'tsunami' ? 'Tsunami Alert Levels' : 'Earthquake Alert Levels',
+              pieHole: 0.4,
+              colors: ['#28a745', '#ffc107', '#fd7e14', '#dc3545']
+          };
+
+          var pieChart = new google.visualization.PieChart(document.getElementById('piechart'));
+          pieChart.draw(pieData, pieOptions);
+
+          if (disasterType === 'earthquake') {
+              var lineData = google.visualization.arrayToDataTable([
+                  ['Index', 'Magnitude'],
+                  {% for index in range(magnitude|length) %}
+                      [{{ index }}, {{ magnitude[index] }}],
+                  {% endfor %}
+              ]);
+
+              var lineOptions = {
+                  title: 'Earthquake Magnitudes Over Time',
+                  curveType: 'function',
+                  legend: { position: 'bottom' }
+              };
+
+              var lineChart = new google.visualization.LineChart(document.getElementById('linechart'));
+              lineChart.draw(lineData, lineOptions);
+
+          } else if (disasterType === 'flood') {
+              var lineDataMonsoon = new google.visualization.DataTable();
+              lineDataMonsoon.addColumn('number', 'Index');
+              lineDataMonsoon.addColumn('number', 'Monsoon Intensity');
+              {% for index in range(flood['Monsoon_Intensity']|length) %}
+                  lineDataMonsoon.addRow([{{ index }}, {{ flood['Monsoon_Intensity'][index] }}]);
+              {% endfor %}
+
+              var lineOptionsMonsoon = {
+                  title: 'Monsoon Intensity Over Time',
+                  curveType: 'function',
+                  legend: { position: 'bottom' }
+              };
+
+              var lineChartMonsoon = new google.visualization.LineChart(document.getElementById('linechart-monsoon'));
+              lineChartMonsoon.draw(lineDataMonsoon, lineOptionsMonsoon);
+
+              var lineDataUrbanization = new google.visualization.DataTable();
+              lineDataUrbanization.addColumn('number', 'Index');
+              lineDataUrbanization.addColumn('number', 'Urbanization Level');
+              {% for index in range(flood['Urbanization_Level']|length) %}
+                  lineDataUrbanization.addRow([{{ index }}, {{ flood['Urbanization_Level'][index] }}]);
+              {% endfor %}
+
+              var lineOptionsUrbanization = {
+                  title: 'Urbanization Level Over Time',
+                  curveType: 'function',
+                  legend: { position: 'bottom' }
+              };
+
+              var lineChartUrbanization = new google.visualization.LineChart(document.getElementById('linechart-urbanization'));
+              lineChartUrbanization.draw(lineDataUrbanization, lineOptionsUrbanization);
+
+              var barData = google.visualization.arrayToDataTable([
+                  ['Index', 'Climate Change'],
+                  {% for index in range(flood['Climate_change']|length) %}
+                      [{{ index }}, {{ flood['Climate_change'][index] }}],
+                  {% endfor %}
+              ]);
+
+              var barOptions = {
+                  title: 'Climate Change Impact Over Time',
+                  hAxis: { title: 'Index' },
+                  vAxis: { title: 'Climate Change' },
+                  bars: 'horizontal'
+              };
+
+              var barChart = new google.visualization.BarChart(document.getElementById('barchart-climate'));
+              barChart.draw(barData, barOptions);
+
+          } else if (disasterType === 'tsunami') {
+              var lineDataMagnitude = google.visualization.arrayToDataTable([
+                  ['Index', 'Earthquake Magnitude'],
+                  {% for index in range(tsunami['Earthquake_Magnitude']|length) %}
+                      [{{ index }}, {{ tsunami['Earthquake_Magnitude'][index] }}],
+                  {% endfor %}
+              ]);
+
+              var lineOptionsMagnitude = {
+                  title: 'Earthquake Magnitude Over Time',
+                  curveType: 'function',
+                  legend: { position: 'bottom' }
+              };
+
+              var lineChartMagnitude = new google.visualization.LineChart(document.getElementById('linechart-magnitude'));
+              lineChartMagnitude.draw(lineDataMagnitude, lineOptionsMagnitude);
+
+              var lineDataDepth = google.visualization.arrayToDataTable([
+                  ['Index', 'Earthquake Depth'],
+                  {% for index in range(tsunami['Earthquake_Depth']|length) %}
+                      [{{ index }}, {{ tsunami['Earthquake_Depth'][index] }}],
+                  {% endfor %}
+              ]);
+
+              var lineOptionsDepth = {
+                  title: 'Earthquake Depth Over Time',
+                  curveType: 'function',
+                  legend: { position: 'bottom' }
+              };
+
+              var lineChartDepth = new google.visualization.LineChart(document.getElementById('linechart-depth'));
+              lineChartDepth.draw(lineDataDepth, lineOptionsDepth);
+
+              var barData = google.visualization.arrayToDataTable([
+                  ['Index', 'Tsunami Intensity'],
+                  {% for index in range(tsunami['Tsunami_Intensity']|length) %}
+                      [{{ index }}, {{ tsunami['Tsunami_Intensity'][index] }}],
+                  {% endfor %}
+              ]);
+
+              var barOptions = {
+                  title: 'Tsunami Intensity Over Time',
+                  hAxis: { title: 'Index' },
+                  vAxis: { title: 'Tsunami Intensity' }
+              };
+
+              var barChart = new google.visualization.BarChart(document.getElementById('barchart-tsunami'));
+              barChart.draw(barData, barOptions);
+          }
+      }
+
+      // Auto-refresh the page every 5 seconds
+      setInterval(function () {
+        location.reload();
+      }, 10000); // 5000 milliseconds = 5 seconds
+    </script>
+  </head>
+  <body>
+    <div
+      class="h-16 shadow-2xl w-full font1 text-yellow-600 font-semibold flex justify-between text-xl items-center"
+    >
+      <div
+        onclick="window.location.href='{{ url_for('main_dashboard') }}'"
+        class="flex items-center ml-3 cursor-pointer"
+      >
+        <img
+          class="h-10"
+          src="{{ url_for('static', filename='assets/logo.png') }}"
+        />
+        Climate Informed DSS
+      </div>
+      <div>
+        <a
+          href="{{ url_for('logout') }}"
+          class="btn bg-white border-2 border-yellow-500 text-yellow-600 rounded-full mr-3"
+          >Logout</a
+        >
+      </div>
+    </div>
+    <div class="container text-yellow-600">
+      <h1 class="text-center text-3xl font1 font-semibold pt-4">
+        Analyze Past Disasters
+      </h1>
+      <form method="POST" action="/analyze_disasters">
+        <div class="my-3 w-full">
+          <select
+            id="disaster_type"
+            name="disaster_type"
+            class="form-select p-4 w-full"
+            required
+          >
+            <option class="p-4" value="">Select Disaster Type</option>
+            <option class="p-4" value="earthquake">Earthquake</option>
+            <option class="p-4" value="flood">Flood</option>
+            <option class="p-4" value="tsunami">Tsunami</option>
+          </select>
+        </div>
+        <button
+          type="submit"
+          class="btn w-full px-2 py-3 bg-yellow-600 rounded-full text-white"
+        >
+          Filter
+        </button>
+      </form>
+
+      {% if data %}
+      <div class="w-full flex flex-col">
+        <div id="piechart" class="mt-4"></div>
+        {% if disaster_type == 'earthquake' %}
+        <div id="linechart" class="mt-4"></div>
+        {% elif disaster_type == 'flood' %}
+        <div id="linechart-monsoon" class="mt-4"></div>
+        <div id="linechart-urbanization" class="mt-4"></div>
+        <div id="barchart-climate" class="mt-4"></div>
+
+        {% elif disaster_type == 'tsunami' %}
+        <div id="linechart-magnitude" class="mt-4"></div>
+        <div id="linechart-depth" class="mt-4"></div>
+        <div id="barchart-tsunami" class="mt-4"></div>
+        {% endif %}
+      </div>
+      {% else %}
+      <p class="mt-4">
+        No data available. Please select a disaster type and filter the records.
+      </p>
+      {% endif %}
+    </div>
+  </body>
+</html>

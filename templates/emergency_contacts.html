@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Emergency Contacts</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link
+      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=MuseoModerno:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .font1 {
+        font-family: "Outfit", sans-serif;
+      }
+      .green {
+        color: green;
+      }
+      .yellow {
+        color: yellow;
+      }
+      .orange {
+        color: orange;
+      }
+      .red {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      class="h-16 shadow-2xl w-full font1 text-yellow-600 font-semibold flex justify-between text-xl items-center"
+    >
+      <div
+        onclick="window.location.href='{{ url_for('main_dashboard') }}'"
+        class="flex items-center ml-3 cursor-pointer"
+      >
+        <img
+          class="h-10"
+          src="{{ url_for('static', filename='assets/logo.png') }}"
+        />
+        Emergency Management System
+      </div>
+    </div>
+
+    <div class="text-yellow-600 font1">
+      <div class="container">
+        <h1 class="text-center text-3xl font1 font-semibold pt-4">
+          Manage Emergency Contacts
+        </h1>
+
+        <form
+          action="{{ url_for('emergency_contacts') }}"
+          method="POST"
+          class="mt-4"
+        >
+          <div class="form-group">
+            <label for="contact_email" class="font1 text-lg"
+              >Add Emergency Contact Email:</label
+            >
+            <input
+              type="email"
+              id="contact_email"
+              name="contact_email"
+              required
+              class="form-control"
+            />
+          </div>
+          <button
+            type="submit"
+            class="btn bg-yellow-600 text-white w-full rounded-full"
+          >
+            Add Contact
+          </button>
+        </form>
+
+        <h2 class="mt-5 text-xl font-semibold">Current Emergency Contacts:</h2>
+        <ul class="list-disc pl-5">
+          {% for contact in contacts %}
+          <li class="mt-2">{{ contact }}</li>
+          {% else %}
+          <li>No contacts added yet.</li>
+          {% endfor %}
+        </ul>
+
+        <a
+          href="{{ url_for('main_dashboard') }}"
+          class="btn bg-white border-2 border-yellow-500 text-yellow-600 w-full rounded-full mt-4"
+          >Back to Dashboard</a
+        >
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Predict Disaster</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    />
+    <link
+      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=MuseoModerno:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .font1 {
+        font-family: "Outfit", sans-serif;
+        font-optical-sizing: auto;
+      }
+    </style>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+  </head>
+  <body>
+    <div
+      class="h-16 shadow-2xl w-full font1 text-yellow-600 font-semibold flex justify-between text-xl items-center"
+    >
+      <div
+        onclick="window.location.href='{{ url_for('main_dashboard') }}'"
+        class="flex items-center ml-3 cursor-pointer"
+      >
+        <img
+          class="h-10"
+          src="{{ url_for('static', filename='assets/logo.png') }}"
+        />
+        Climate Informed DSS
+      </div>
+      <div>
+        <a
+          href="{{ url_for('logout') }}"
+          class="btn bg-white border-2 border-yellow-500 text-yellow-600 rounded-full mr-3"
+          >Logout</a
+        >
+      </div>
+    </div>
+    <div class="text-yellow-600 font1">
+      <div class="container">
+        <h1 class="text-center text-3xl font1 font-semibold pt-4">
+          Predict a Disaster
+        </h1>
+        <form
+          method="POST"
+          action="{{ url_for('download_dataset') }}"
+          style="display: flex; justify-content: end"
+        >
+          <input
+            type="hidden"
+            id="disaster_download_type"
+            name="disaster_download_type"
+            value=""
+          />
+          <button
+            class="text-yellow-600 border-2 border-yellow-600"
+            style="padding: 15px; border-radius: 10px"
+            type="submit"
+          >
+            Download Dataset
+          </button>
+        </form>
+        <form method="POST">
+          <div class="form-group">
+            <label for="disaster_type">Select Disaster Type:</label>
+            <select
+              class="form-control"
+              id="disaster_type"
+              name="disaster_type"
+              onchange="loadFormFields()"
+            >
+              <option value="earthquake">Earthquake</option>
+              <option value="flood">Flood</option>
+
+              <option value="tsunami">Tsunami</option>
+            </select>
+          </div>
+          <div id="form_fields">
+            <!-- Dynamic form fields will be inserted here based on selected disaster -->
+          </div>
+          <button
+            type="submit"
+            class="btn bg-yellow-600 text-white w-full rounded-full"
+          >
+            Predict
+          </button>
+        </form>
+
+        <!-- Map container -->
+        <div
+          id="map"
+          style="height: 400px; width: 100%; margin-top: 20px"
+        ></div>
+      </div>
+    </div>
+
+    <script>
+      let map, marker;
+      let disasterType = "";
+      function loadFormFields() {
+        disasterType = document.getElementById("disaster_type").value;
+
+        document.getElementById("disaster_download_type").value = disasterType;
+        let formFields = "";
+
+        if (disasterType === "earthquake") {
+          formFields = `
+                        <!-- Earthquake-specific fields -->
+                        <div class="form-group">
+                        <label for="magnitude">Magnitude:</label>
+                        <input type="number" step="0.01" class="form-control" id="magnitude" name="magnitude" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="depth">Depth:</label>
+                        <input type="number" step="0.01" class="form-control" id="depth" name="depth" required>
+                    </div>
+                    <div class="form-group">
+                            <label for="latitude">Latitude:</label>
+                            <input type="number" step="0.01" class="form-control" id="latitude" name="latitude" required onchange="updateMap()">
+                        </div>
+                        <div class="form-group">
+                            <label for="longitude">Longitude:</label>
+                            <input type="number" step="0.01" class="form-control" id="longitude" name="longitude" required onchange="updateMap()">
+                        </div>
+                    <div class="form-group">
+                        <label for="dmin">Minimum Distance:</label>
+                        <input type="number" step="0.01" class="form-control" id="dmin" name="dmin" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="gap">Gap:</label>
+                        <input type="number" step="0.01" class="form-control" id="gap" name="gap" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="nst">Number of Stations:</label>
+                        <input type="number" step="0.01" class="form-control" id="nst" name="nst" required>
+                    </div>`;
+        } else if (disasterType === "tsunami") {
+          formFields = `
+                        <!-- Tsunami-specific fields -->
+                        <div class="form-group">
+                            <label for="EQ_MAGNITUDE">Earthquake Magnitude:</label>
+                            <input type="number" step="0.01" class="form-control" id="EQ_MAGNITUDE" name="EQ_MAGNITUDE" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="EQ_DEPTH">Earthquake Depth:</label>
+                            <input type="number" step="0.01" class="form-control" id="EQ_DEPTH" name="EQ_DEPTH" required>
+                        </div>
+                        <div class="form-group">
+                        <label for="TS_INTENSITY">Tsunami Intensity:</label>
+                        <input type="number" step="0.01" class="form-control" id="TS_INTENSITY" name="TS_INTENSITY" required>
+                    </div>
+                        <div class="form-group">
+                            <label for="latitude">Latitude:</label>
+                            <input type="number" step="0.01" class="form-control" id="latitude" name="latitude" required onchange="updateMap()">
+                        </div>
+                        <div class="form-group">
+                            <label for="longitude">Longitude:</label>
+                            <input type="number" step="0.01" class="form-control" id="longitude" name="longitude" required onchange="updateMap()">
+                        </div>`;
+        } else if (disasterType === "flood") {
+          formFields = `
+                    <div class="form-group">
+                        <label for="MonsoonIntensity">Monsoon Intensity:</label>
+                        <input type="number" step="0.01" class="form-control" id="MonsoonIntensity" name="MonsoonIntensity" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="Urbanization">Urbanization Level:</label>
+                        <input type="number" step="0.01" class="form-control" id="Urbanization" name="Urbanization" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="ClimateChange">Climate Change Effect:</label>
+                        <input type="number" step="0.01" class="form-control" id="ClimateChange" name="ClimateChange" required>
+                    </div>
+                  
+                    <div class="form-group">
+                            <label for="latitude">Latitude:</label>
+                            <input type="number" step="0.01" class="form-control" id="latitude" name="latitude" required onchange="updateMap()">
+                        </div>
+                        <div class="form-group">
+                            <label for="longitude">Longitude:</label>
+                            <input type="number" step="0.01" class="form-control" id="longitude" name="longitude" required onchange="updateMap()">
+                        </div>
+                    `;
+        } else if (disasterType === "tornado") {
+          formFields = `
+                    <div class="form-group">
+                        <label for="magnitude">Magnitude:</label>
+                        <input type="number" step="0.01" class="form-control" id="magnitude" name="magnitude" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="injuries">Injuries:</label>
+                        <input type="number" class="form-control" id="injuries" name="injuries" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="fatalities">Fatalities:</label>
+                        <input type="number" class="form-control" id="fatalities" name="fatalities" required>
+                    </div>
+                    <div class="form-group">
+                            <label for="latitude">Latitude:</label>
+                            <input type="number" step="0.01" class="form-control" id="latitude" name="latitude" required onchange="updateMap()">
+                        </div>
+                        <div class="form-group">
+                            <label for="longitude">Longitude:</label>
+                            <input type="number" step="0.01" class="form-control" id="longitude" name="longitude" required onchange="updateMap()">
+                        </div>
+                    `;
+        }
+
+        document.getElementById("form_fields").innerHTML = formFields;
+      }
+
+      function initMap() {
+        // Initialize the map and set view to a default location
+        map = L.map("map").setView([20, 0], 2); // Center of the map at (20, 0) with zoom level 2
+
+        // Set up the OSM layer
+        L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+          maxZoom: 18,
+          attribution: "© OpenStreetMap",
+        }).addTo(map);
+      }
+
+      function updateMap() {
+        const lat = parseFloat(document.getElementById("latitude").value);
+        const lng = parseFloat(document.getElementById("longitude").value);
+
+        if (!isNaN(lat) && !isNaN(lng)) {
+          // If a marker already exists, remove it
+          if (marker) {
+            map.removeLayer(marker);
+          }
+
+          // Set the map view to the provided coordinates
+          map.setView([lat, lng], 8);
+
+          // Add a marker at the provided coordinates
+          marker = L.marker([lat, lng]).addTo(map);
+        }
+      }
+
+      // Initialize the map on page load
+      window.onload = function () {
+        initMap();
+        loadFormFields();
+      };
+    </script>
+  </body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prediction Result</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <div class="container mt-5">
+      <h1 class="text-center">Prediction Result</h1>
+      {% set alert_class = 'alert-info' %} {# Default class #} {% set alert_text
+      = 'Unknown Prediction' %} {# Default text #} {% if disaster_type ==
+      'Earthquake' %} {% if prediction == 0 %} {% set alert_class =
+      'alert-success' %} {# Green #} {% set alert_text = 'Green' %} {% elif
+      prediction == 1 %} {% set alert_class = 'alert-warning' %} {# Yellow #} {%
+      set alert_text = 'Yellow' %} {% elif prediction == 2 %} {% set alert_class
+      = 'alert-warning' %} {# Orange #} {% set alert_text = 'Orange' %} {% elif
+      prediction == 3 %} {% set alert_class = 'alert-danger' %} {# Red #} {% set
+      alert_text = 'Red' %} {% else %} {% set alert_class = 'alert-secondary' %}
+      {# Default case #} {% endif %} {% elif disaster_type == 'Flood' %} {% if
+      prediction < 0.4 %} {% set alert_class = 'alert-success' %} {# Green #} {%
+      set alert_text = 'Green' %} {% elif prediction < 0.6 %} {% set alert_class
+      = 'alert-warning' %} {# Yellow #} {% set alert_text = 'Yellow' %} {% elif
+      prediction < 0.8 %} {% set alert_class = 'alert-warning' %} {# Orange #}
+      {% set alert_text = 'Orange' %} {% elif prediction >= 0.8 %} {% set
+      alert_class = 'alert-danger' %} {# Red #} {% set alert_text = 'Red' %} {%
+      else %} {% set alert_class = 'alert-secondary' %} {# Default case #} {%
+      endif %} {% elif disaster_type == 'Tsunami' %} {% if prediction == 0 %} {%
+      set alert_class = 'alert-success' %} {# Green #} {% set alert_text = 'Low
+      Intensity' %} {% elif prediction == 1 %} {% set alert_class =
+      'alert-warning' %} {# Yellow #} {% set alert_text = 'Moderate Intensity'
+      %} {% elif prediction == 2 %} {% set alert_class = 'alert-danger' %} {#
+      Red #} {% set alert_text = 'High Intensity' %} {% else %} {% set
+      alert_class = 'alert-secondary' %} {# Default case #} {% endif %} {% else
+      %} {% set alert_class = 'alert-secondary' %} {# Default case #} {% endif
+      %}
+
+      <div class="alert {{ alert_class }} mt-4">
+        <strong>Prediction:</strong> {{ alert_text }}
+      </div>
+      <div class="text-center mt-4">
+        <a href="{{ url_for('main_dashboard') }}" class="btn btn-primary">
+          Back to Dashboard
+        </a>
+        <form
+          method="POST"
+          action="{{ url_for('send_alert_email') }}"
+          style="display: inline"
+        >
+          <input type="hidden" name="alert_level" value="{{ alert_text }}" />
+          <input
+            type="hidden"
+            name="disaster_details"
+            value="{{ disaster_details }}"
+          />
+          <button type="submit" class="btn btn-warning ml-2">Send Mail</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

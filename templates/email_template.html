@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Disaster Alert Notification</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+      }
+      .container {
+        width: 80%;
+        margin: 0 auto;
+        background-color: #ffffff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      .header {
+        text-align: center;
+        padding: 10px 0;
+        border-bottom: 2px solid #eeeeee;
+      }
+      .header h1 {
+        margin: 0;
+        color: #333333;
+      }
+      .alert-section {
+        margin: 20px 0;
+      }
+      .alert-color {
+        font-size: 18px;
+        font-weight: bold;
+        padding: 10px;
+        border-radius: 4px;
+        color: #ffffff;
+        text-align: center;
+      }
+      .alert-color.green {
+        background-color: #4caf50; /* Green */
+      }
+      .alert-color.yellow {
+        background-color: #ffeb3b; /* Yellow */
+        color: #000000;
+      }
+      .alert-color.orange {
+        background-color: #ff9800; /* Orange */
+      }
+      .alert-color.red {
+        background-color: #f44336; /* Red */
+      }
+      .disaster-details {
+        margin: 20px 0;
+        font-size: 16px;
+        line-height: 1.6;
+      }
+      .footer {
+        text-align: center;
+        padding: 10px;
+        border-top: 2px solid #eeeeee;
+        font-size: 14px;
+        color: #777777;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>Disaster Alert Notification</h1>
+      </div>
+      <div class="alert-section">
+        <div class="alert-color {{ alert_level_class }}">
+          Alert Level: {{ alert_level }}
+        </div>
+      </div>
+      <div class="disaster-details">
+        <p>{{ disaster_details }}</p>
+      </div>
+      <p>Dear User,</p>
+      <p>
+        This is an important notification regarding the recent disaster alert.
+        Please review the details below:
+      </p>
+      <ul>
+        <li><strong>Alert Level:</strong> {{ alert_level }}</li>
+        <li><strong>Disaster Details:</strong> {{ disaster_details }}</li>
+      </ul>
+      <p>
+        Based on the current alert level, please follow the appropriate safety
+        guidelines:
+      </p>
+      <ul>
+        <li>
+          <strong>0 [Green]:</strong> Low risk. Stay informed and follow any
+          local advisories.
+        </li>
+        <li>
+          <strong>1 [Yellow]:</strong> Moderate risk. Be prepared and have an
+          emergency kit ready.
+        </li>
+        <li>
+          <strong>2 [Orange]:</strong> High risk. Take precautions and follow
+          evacuation orders if issued.
+        </li>
+        <li>
+          <strong>3 [Red]:</strong> Severe risk. Follow emergency procedures and
+          seek immediate shelter if needed.
+        </li>
+      </ul>
+      <p>
+        For further information and updates, please stay tuned to local news and
+        emergency services.
+      </p>
+      <div class="footer">
+        <p>&copy; 2024 Disaster Alert System. All rights reserved.</p>
+      </div>
+    </div>
+  </body>
+</html>
