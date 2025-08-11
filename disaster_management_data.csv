@@ -1,0 +1,601 @@
+Disaster Type,Severity Level,Date and Time,Duration of Disaster (hours),Affected Area Latitude,Affected Area Longitude,Total Population Affected,Number of Populations Survived,Amount of Food Supplies (kg),Food Distribution Quantity (kg),Delivery Times (hours),Supply Chain Issues,Response Time (hours),Resource Allocation
+Flood,Mild,2023-12-07 00:30,13,43.479,-91.839,5572,4721,45741,32814,8,Delay in transportation,2,Less than 50%
+Earthquake,Mild,2023-12-18 00:07,44,18.363,22.048,18856,14781,39439,32255,2,Shortage of perishable items,8,Less than 50%
+Tsunami,Mild,2023-12-30 23:35,25,82.298,-58.826,4039,3134,33526,29150,11,No major issues,2,Greater than 75%
+Tsunami,Severe,2024-03-09 18:31,19,85.161,-43.728,19089,14481,33700,27481,3,Delay in transportation,12,Less than 50%
+Tsunami,Mild,2023-12-14 00:19,66,-48.098,-143.639,10108,7992,33909,24839,7,Shortage of perishable items,12,Less than 50%
+Flood,Severe,2024-03-26 01:54,53,-77.148,48.592,18502,15649,20708,16410,6,Shortage of perishable items,12,Less than 50%
+Earthquake,Mild,2024-06-26 01:13,64,-84.222,-66.437,9773,6970,47170,41286,7,Shortage of perishable items,12,Between 50% and 75%
+Tsunami,Severe,2024-04-22 17:24,41,-64.283,-129.733,19394,15666,48311,37957,11,Shortage of medical supplies,7,Less than 50%
+Earthquake,Severe,2024-09-10 01:35,43,-73.636,-163.038,4592,3354,20484,17583,8,Delay in transportation,8,Less than 50%
+Flood,Moderate,2024-03-24 23:22,45,-44.745,19.161,1376,1150,17507,14641,10,No major issues,12,Less than 50%
+Earthquake,Moderate,2024-04-17 15:54,39,-61.532,-178.832,9630,8612,21708,17399,3,No major issues,12,Between 50% and 75%
+Flood,Mild,2024-01-31 09:03,21,-22.696,-121.842,18378,16240,49252,37669,2,Delay in transportation,7,Less than 50%
+Earthquake,Mild,2024-04-06 09:17,27,68.042,160.902,3806,3221,14535,13017,10,Shortage of perishable items,4,Greater than 75%
+Tsunami,Severe,2024-04-22 15:34,22,-42.29,134.076,14865,13272,45343,38589,5,No major issues,8,Greater than 75%
+Flood,Moderate,2024-02-27 17:39,40,71.931,-17.465,9123,6796,32156,22644,10,Shortage of perishable items,11,Less than 50%
+Earthquake,Mild,2024-08-01 19:48,57,23.599,-97.581,2029,1769,14643,11755,6,Shortage of medical supplies,5,Between 50% and 75%
+Earthquake,Severe,2024-02-02 12:35,71,68.829,27.436,8962,7679,36677,27070,3,Shortage of medical supplies,7,Between 50% and 75%
+Tsunami,Moderate,2023-11-15 12:40,67,41.234,62.411,4224,3008,32236,27726,3,Shortage of perishable items,5,Less than 50%
+Flood,Moderate,2023-12-02 09:52,20,-14.061,-79.724,9185,8035,14940,11782,10,Delay in transportation,2,Greater than 75%
+Flood,Mild,2024-01-27 04:32,17,76.746,125.53,6449,5038,41546,30858,8,Delay in transportation,4,Less than 50%
+Earthquake,Moderate,2024-05-05 05:24,28,76.773,102.647,10347,8118,46422,38640,9,Shortage of perishable items,5,Less than 50%
+Earthquake,Mild,2024-06-21 17:25,49,42.433,-158.055,11276,8022,48284,38403,10,Shortage of perishable items,2,Between 50% and 75%
+Earthquake,Mild,2024-07-24 16:12,16,17.106,63.077,8707,6798,47334,35464,11,Delay in transportation,11,Less than 50%
+Tsunami,Severe,2024-06-26 14:58,49,11.741,-66.107,9544,7070,30590,22873,8,Shortage of perishable items,12,Greater than 75%
+Tsunami,Moderate,2024-06-25 22:56,32,77.223,156.864,1305,1033,46896,42169,3,Shortage of perishable items,10,Less than 50%
+Earthquake,Moderate,2024-01-19 01:44,68,-77.618,-92.058,10338,7562,45600,38336,11,Delay in transportation,12,Between 50% and 75%
+Tsunami,Severe,2024-01-29 19:07,18,79.007,-131.655,4782,4198,46256,33817,6,Shortage of perishable items,7,Less than 50%
+Flood,Severe,2024-05-30 17:10,66,-42.483,-4.129,2664,1913,37759,32694,2,Delay in transportation,7,Greater than 75%
+Earthquake,Severe,2024-01-14 22:42,28,-60.915,-20.939,15014,12194,17331,12392,4,Delay in transportation,7,Between 50% and 75%
+Flood,Mild,2023-12-14 13:02,39,-67.06,-69.027,2307,2029,23767,19879,12,Delay in transportation,7,Greater than 75%
+Flood,Moderate,2024-05-21 04:01,51,44.906,153.275,8757,7644,21603,18930,2,Shortage of perishable items,7,Between 50% and 75%
+Flood,Severe,2024-01-09 08:36,63,-45.33,-122.689,4542,3526,12537,10928,5,Shortage of perishable items,9,Less than 50%
+Tsunami,Mild,2023-11-11 01:21,26,-85.74,-110.473,11756,8884,14549,12997,6,No major issues,12,Between 50% and 75%
+Tsunami,Severe,2023-11-04 11:40,65,6.519,158.125,4779,4183,27118,19951,6,Delay in transportation,3,Greater than 75%
+Tsunami,Moderate,2023-11-24 15:14,58,51.557,-22.898,17758,12841,47787,35267,2,Shortage of medical supplies,2,Between 50% and 75%
+Flood,Severe,2024-07-29 15:31,58,79.247,85.334,7456,5762,14585,12977,7,No major issues,12,Less than 50%
+Flood,Moderate,2024-08-13 22:02,44,-34.329,-32.979,14185,11907,46333,33612,8,Shortage of medical supplies,12,Greater than 75%
+Earthquake,Severe,2024-08-18 12:52,48,-35.829,17.257,1013,770,23774,18685,11,No major issues,9,Between 50% and 75%
+Tsunami,Severe,2023-12-31 04:27,25,2.011,105.745,6560,5456,28598,22966,12,No major issues,3,Greater than 75%
+Earthquake,Severe,2024-01-29 17:38,31,-49.565,-108.313,1800,1276,41138,33825,3,Shortage of medical supplies,8,Greater than 75%
+Flood,Mild,2024-07-29 09:20,57,35.344,-2.024,8994,6561,10363,9104,3,Shortage of medical supplies,5,Less than 50%
+Flood,Severe,2023-10-26 20:03,41,-80.961,-90.289,4976,3937,40450,33715,10,No major issues,9,Greater than 75%
+Flood,Severe,2023-11-30 20:29,39,59.502,17.234,6215,5274,41108,32475,5,No major issues,10,Between 50% and 75%
+Flood,Mild,2023-10-31 20:14,29,-10.823,76.876,8683,6549,30952,27194,3,Shortage of perishable items,4,Less than 50%
+Tsunami,Severe,2023-11-14 10:57,21,37.155,-156.878,14356,10999,40534,31744,5,Shortage of medical supplies,8,Greater than 75%
+Flood,Severe,2024-08-01 08:20,13,64.212,95.614,13464,10709,33052,25110,8,Shortage of medical supplies,10,Greater than 75%
+Flood,Severe,2024-06-12 21:31,63,18.585,-100.606,8190,6180,41827,29521,7,Shortage of medical supplies,4,Between 50% and 75%
+Earthquake,Severe,2024-08-16 08:23,46,-85.146,-38.153,19493,16229,15501,12843,4,Shortage of medical supplies,4,Less than 50%
+Tsunami,Moderate,2023-11-19 09:50,32,-51.901,-62.336,13423,10143,37627,28237,3,Shortage of medical supplies,2,Greater than 75%
+Flood,Mild,2023-12-05 09:56,72,-27.007,54.052,2319,1973,26205,19388,2,Shortage of perishable items,5,Less than 50%
+Tsunami,Severe,2024-08-01 19:21,19,11.515,-101.533,9396,8018,20996,17241,3,Shortage of perishable items,6,Less than 50%
+Flood,Mild,2024-07-29 00:55,71,-33.848,63.845,13298,10363,22997,16447,12,Shortage of perishable items,3,Greater than 75%
+Tsunami,Severe,2024-06-12 00:18,50,54.995,106.642,19544,16739,32754,26417,12,No major issues,3,Between 50% and 75%
+Flood,Moderate,2024-06-30 18:46,12,62.924,116.039,4458,3507,33736,27903,9,Shortage of perishable items,8,Less than 50%
+Flood,Severe,2023-10-13 18:19,53,-41.385,110.952,18634,15930,40465,31850,11,No major issues,7,Less than 50%
+Earthquake,Moderate,2024-03-13 19:06,68,-8.856,90.171,19672,16171,34837,26729,9,No major issues,4,Between 50% and 75%
+Earthquake,Moderate,2023-12-15 00:15,63,-43.497,-79.323,10052,8153,43857,39015,3,Shortage of perishable items,8,Between 50% and 75%
+Flood,Mild,2024-06-24 06:15,56,-4.303,76.263,15685,13466,16098,12215,8,Shortage of perishable items,6,Greater than 75%
+Flood,Moderate,2023-12-06 09:35,42,9.625,-56.247,19035,14583,39736,29968,6,Shortage of perishable items,3,Greater than 75%
+Earthquake,Moderate,2024-06-04 19:16,19,43.719,162.316,7066,5216,41732,31520,11,No major issues,3,Less than 50%
+Tsunami,Mild,2024-01-05 05:37,35,-57.701,-174.907,18502,13419,12982,11617,10,No major issues,4,Greater than 75%
+Tsunami,Mild,2023-10-12 07:22,67,-87.792,-77.638,16686,13150,22082,19721,6,Shortage of medical supplies,3,Less than 50%
+Tsunami,Moderate,2023-10-23 12:02,16,13.864,67.122,5971,4357,46886,41720,3,Shortage of perishable items,3,Between 50% and 75%
+Tsunami,Severe,2023-09-28 13:49,50,52.333,-98.753,18123,14064,39014,29629,11,Shortage of medical supplies,6,Between 50% and 75%
+Flood,Mild,2024-09-14 06:54,51,82.82,-144.276,7808,6442,27343,22751,4,Shortage of perishable items,4,Between 50% and 75%
+Earthquake,Mild,2024-08-02 23:43,12,-16.467,68.174,16398,12433,25170,19069,6,Shortage of medical supplies,3,Greater than 75%
+Earthquake,Moderate,2023-12-07 18:51,62,52.425,32.324,7482,5873,45688,34035,4,No major issues,4,Less than 50%
+Earthquake,Mild,2023-10-13 15:23,62,-34.63,89.625,19651,17376,38780,28110,6,Shortage of medical supplies,6,Between 50% and 75%
+Flood,Moderate,2024-05-11 03:36,40,-75.52,-165.65,15156,12835,49564,37176,3,Shortage of perishable items,12,Between 50% and 75%
+Flood,Mild,2023-11-25 00:59,60,31.011,-82.976,2318,1976,21481,17058,12,Shortage of medical supplies,6,Less than 50%
+Flood,Moderate,2023-09-28 08:13,52,56.564,168.86,16401,12622,31843,24334,3,Shortage of perishable items,7,Between 50% and 75%
+Flood,Moderate,2024-08-20 03:00,30,29.265,-35.837,19025,13457,15771,12031,7,Delay in transportation,8,Between 50% and 75%
+Earthquake,Severe,2024-05-12 06:18,67,7.667,-31.231,7146,5743,42669,35205,2,Shortage of perishable items,6,Between 50% and 75%
+Earthquake,Moderate,2024-09-15 10:53,40,68.552,-5.504,1945,1740,49903,42909,4,No major issues,10,Less than 50%
+Flood,Moderate,2023-10-26 08:48,17,-49.554,122.906,4717,3737,17698,14681,4,Shortage of medical supplies,6,Between 50% and 75%
+Flood,Moderate,2024-02-24 00:41,38,60.25,172.888,8986,7111,19479,15129,11,Shortage of perishable items,3,Less than 50%
+Tsunami,Moderate,2023-12-23 23:08,71,51.789,-83.818,1084,820,29566,25648,11,Shortage of medical supplies,4,Between 50% and 75%
+Flood,Moderate,2023-12-13 13:41,34,-30.161,94.634,13360,10568,31088,27168,5,Shortage of medical supplies,5,Greater than 75%
+Tsunami,Mild,2024-07-19 13:56,32,44.047,73.882,13492,10486,19968,15955,2,Shortage of perishable items,10,Greater than 75%
+Tsunami,Mild,2024-06-12 06:16,67,62.107,-144.104,15972,11229,19447,15207,12,Shortage of perishable items,3,Between 50% and 75%
+Tsunami,Moderate,2024-04-24 00:56,51,34.687,53.941,11766,10241,44971,34897,7,Shortage of medical supplies,10,Less than 50%
+Flood,Mild,2023-11-17 03:00,27,23.609,151.534,8454,7180,38440,34429,12,Delay in transportation,9,Less than 50%
+Flood,Moderate,2024-07-05 15:23,69,-84.789,-63.225,2838,2153,34565,27172,5,Shortage of medical supplies,11,Greater than 75%
+Earthquake,Mild,2023-10-19 09:23,23,-75.786,133.502,8891,7108,48217,35132,9,No major issues,9,Less than 50%
+Flood,Mild,2024-08-13 01:37,69,54.834,144.435,18910,13834,38949,34627,11,No major issues,12,Between 50% and 75%
+Flood,Moderate,2024-06-04 22:43,41,62.155,-108.282,13605,11845,16989,12698,11,No major issues,11,Less than 50%
+Flood,Moderate,2024-07-24 04:43,13,86.03,56.963,9994,7011,13214,11656,9,No major issues,5,Greater than 75%
+Tsunami,Mild,2024-08-06 03:23,52,-55.776,-89.774,5481,4525,12583,9585,9,Delay in transportation,11,Less than 50%
+Flood,Mild,2024-03-30 04:05,17,73.733,-62.381,14615,10743,18661,15998,7,No major issues,4,Less than 50%
+Tsunami,Moderate,2024-02-12 19:29,59,66.671,109.524,16346,14590,19224,16356,5,Shortage of medical supplies,10,Less than 50%
+Earthquake,Moderate,2024-05-10 18:16,12,-42.397,-135.508,13077,10913,27181,22204,12,No major issues,3,Greater than 75%
+Earthquake,Moderate,2023-11-14 19:43,13,21.518,159.541,11748,10374,24507,20329,12,Shortage of medical supplies,6,Greater than 75%
+Tsunami,Mild,2024-01-10 02:28,20,-81.838,-166.604,17142,12397,25387,22275,4,Shortage of medical supplies,9,Less than 50%
+Flood,Severe,2024-06-20 10:42,56,80.275,-29.114,6063,5317,16489,14291,11,Shortage of medical supplies,6,Less than 50%
+Flood,Moderate,2024-04-23 06:59,25,-10.191,162.2,12884,9274,34073,27561,12,No major issues,2,Between 50% and 75%
+Tsunami,Mild,2024-07-05 16:05,19,80.822,116.709,4003,3332,49134,43936,2,No major issues,5,Less than 50%
+Flood,Mild,2024-08-14 08:00,16,59.367,19.515,8076,6966,25269,19348,4,Delay in transportation,6,Less than 50%
+Earthquake,Severe,2024-01-24 10:40,28,53.732,-140.427,1844,1339,33477,28723,5,No major issues,2,Less than 50%
+Tsunami,Mild,2024-08-23 01:51,20,43.509,9.391,3082,2450,33726,27070,3,Shortage of medical supplies,10,Less than 50%
+Flood,Mild,2024-07-10 21:35,58,50.981,132.113,18086,13751,12041,8575,9,Shortage of medical supplies,8,Greater than 75%
+Earthquake,Moderate,2024-02-08 03:17,57,73.746,-153.543,3647,2787,19721,14063,6,No major issues,8,Greater than 75%
+Flood,Moderate,2024-04-15 00:39,41,0.999,-25.128,4749,4134,46132,38943,5,Shortage of medical supplies,9,Less than 50%
+Tsunami,Moderate,2024-03-22 01:23,64,-8.37,-30.244,4115,3137,30481,25391,7,Shortage of perishable items,12,Between 50% and 75%
+Earthquake,Mild,2023-11-29 19:15,65,-74.634,-24.524,13210,11391,46462,33080,10,No major issues,12,Less than 50%
+Tsunami,Moderate,2024-02-28 07:14,67,29.761,90.102,2685,2399,49348,37627,3,Shortage of perishable items,4,Greater than 75%
+Tsunami,Mild,2024-04-22 07:36,66,-70.521,124.334,13044,9430,28256,23023,8,Delay in transportation,11,Greater than 75%
+Flood,Moderate,2024-08-04 13:45,13,-57.525,72.972,11124,9837,33004,23143,4,Shortage of medical supplies,3,Less than 50%
+Flood,Severe,2023-12-20 02:41,13,-73.484,10.974,13327,10447,32340,23656,6,No major issues,11,Greater than 75%
+Earthquake,Mild,2024-06-28 13:41,21,-61.666,42.422,3673,2770,37788,30122,9,Shortage of medical supplies,6,Less than 50%
+Flood,Mild,2024-07-26 09:06,34,-12.616,-78.031,16945,13647,30212,21422,8,Delay in transportation,2,Less than 50%
+Tsunami,Mild,2024-05-01 04:23,61,-65.298,-88.013,11751,8507,42596,36181,4,Shortage of perishable items,8,Between 50% and 75%
+Flood,Mild,2023-12-22 14:26,44,10.57,60.497,12605,9005,12772,10054,9,Delay in transportation,7,Between 50% and 75%
+Tsunami,Severe,2024-08-26 16:09,37,37.71,-29.63,4774,3728,31284,22974,11,Shortage of medical supplies,7,Less than 50%
+Tsunami,Mild,2024-03-20 20:00,27,-11.578,-35.838,3577,2787,30334,25758,5,No major issues,4,Less than 50%
+Flood,Severe,2024-08-05 11:55,19,5.509,-110.195,12448,9587,19679,14705,4,No major issues,5,Less than 50%
+Flood,Mild,2024-04-14 22:00,60,46.647,-152.873,17191,13628,46944,39995,9,No major issues,12,Less than 50%
+Earthquake,Moderate,2023-11-12 20:40,16,-5.594,47.299,10000,8182,33064,26499,6,Shortage of medical supplies,9,Less than 50%
+Earthquake,Moderate,2024-02-16 12:00,65,-38.326,52.08,3958,3257,43231,33586,11,Delay in transportation,9,Between 50% and 75%
+Flood,Mild,2023-09-19 23:18,32,18.901,0.492,3027,2391,32507,29141,3,Shortage of perishable items,2,Less than 50%
+Flood,Moderate,2024-03-21 04:48,40,4.332,39.53,12924,10010,28539,22188,7,Delay in transportation,12,Greater than 75%
+Tsunami,Mild,2024-04-29 05:50,33,-72.989,64.217,10310,7736,49498,43293,7,Delay in transportation,11,Greater than 75%
+Earthquake,Moderate,2023-12-08 20:28,31,84.185,71.453,13843,10047,15552,11849,8,No major issues,4,Greater than 75%
+Flood,Severe,2024-04-23 20:20,55,74.241,-146.357,14874,11924,11194,8647,4,Shortage of perishable items,7,Greater than 75%
+Tsunami,Mild,2024-04-25 14:47,26,89.996,-124.22,10692,9290,16628,13327,10,Delay in transportation,12,Less than 50%
+Flood,Mild,2024-05-26 13:55,50,-22.19,-121.591,6424,5423,12863,10061,12,Shortage of perishable items,9,Greater than 75%
+Tsunami,Severe,2023-09-21 04:27,62,-9.193,12.244,11140,9949,40737,35880,5,No major issues,12,Between 50% and 75%
+Tsunami,Moderate,2024-05-20 02:00,61,-39.281,-42.526,18283,14328,20620,17802,11,Shortage of perishable items,6,Less than 50%
+Flood,Moderate,2024-08-16 07:14,67,-23.182,156.346,17905,15581,28681,20557,4,No major issues,9,Between 50% and 75%
+Earthquake,Moderate,2024-07-16 11:05,17,80.354,-100.066,15782,13839,11747,9197,8,No major issues,5,Less than 50%
+Earthquake,Moderate,2024-08-13 08:49,26,-84.926,155.097,11986,10287,19017,13457,9,Shortage of perishable items,9,Between 50% and 75%
+Flood,Mild,2024-07-16 00:15,69,-75.739,-87.867,5899,4776,49903,40199,3,No major issues,5,Less than 50%
+Earthquake,Mild,2023-09-30 03:24,27,-14.431,105.804,15978,11385,42756,35032,2,Shortage of perishable items,4,Less than 50%
+Tsunami,Mild,2024-08-10 02:23,51,-26.493,25.439,7137,5944,15610,12561,7,Delay in transportation,10,Between 50% and 75%
+Flood,Severe,2024-05-20 01:29,47,-86.34,134.399,2426,2006,34464,25873,2,No major issues,3,Less than 50%
+Earthquake,Severe,2024-06-03 15:36,54,23.086,97.74,11895,8643,33088,26774,12,Shortage of perishable items,12,Between 50% and 75%
+Flood,Moderate,2024-04-23 00:38,52,-57.19,-131.453,15997,11316,23211,16451,5,Delay in transportation,7,Less than 50%
+Flood,Moderate,2023-09-22 21:47,64,7.746,-88.807,7262,5498,13132,11466,7,No major issues,3,Less than 50%
+Tsunami,Moderate,2024-06-23 03:11,59,-10.847,164.332,12109,10834,42519,35648,7,No major issues,3,Greater than 75%
+Tsunami,Mild,2024-01-15 20:06,39,18.442,116.043,18874,14320,16723,11973,12,No major issues,6,Between 50% and 75%
+Flood,Severe,2023-10-11 14:45,39,-60.004,-20.193,15651,11088,33105,27244,8,No major issues,12,Less than 50%
+Earthquake,Severe,2024-02-26 10:22,52,-16.882,4.711,6242,5558,19357,16835,12,Shortage of medical supplies,2,Less than 50%
+Earthquake,Mild,2023-12-20 08:50,61,26.129,-49.626,19587,13837,20055,16762,7,No major issues,9,Greater than 75%
+Earthquake,Severe,2024-03-05 15:30,20,5.303,-36.708,10132,7598,17434,12294,4,Shortage of medical supplies,10,Less than 50%
+Flood,Mild,2024-06-05 04:33,28,49.494,73.454,8031,7222,28715,24086,9,Shortage of perishable items,3,Less than 50%
+Earthquake,Moderate,2023-11-23 06:39,23,71.762,-19.76,3876,3341,30944,25793,3,No major issues,6,Less than 50%
+Flood,Severe,2024-05-22 03:15,71,36.039,-117.327,12845,10298,17953,16104,4,Shortage of perishable items,9,Less than 50%
+Tsunami,Severe,2024-05-20 15:18,48,-23.596,109.318,19076,13848,15650,11160,8,Shortage of medical supplies,10,Between 50% and 75%
+Tsunami,Severe,2024-05-09 07:38,16,-67.441,-65.87,3430,2709,43905,33758,10,Shortage of perishable items,4,Between 50% and 75%
+Flood,Mild,2024-07-31 12:47,65,-67.651,-124.914,6395,4683,24776,19057,10,No major issues,3,Less than 50%
+Earthquake,Severe,2024-07-30 20:42,47,-40.599,45.008,18481,13282,21051,17227,11,Shortage of perishable items,4,Greater than 75%
+Flood,Severe,2024-04-07 19:33,69,18.925,123.311,19468,13787,11859,8493,12,No major issues,12,Less than 50%
+Flood,Moderate,2023-11-25 09:39,51,25.018,-0.706,18877,14307,29798,23736,12,Shortage of medical supplies,6,Between 50% and 75%
+Earthquake,Severe,2023-11-11 09:43,15,-61.546,-30.376,16218,12014,49758,36260,7,No major issues,8,Less than 50%
+Tsunami,Severe,2024-03-06 02:48,47,-70.887,-92.974,5014,3778,26247,19112,2,No major issues,8,Greater than 75%
+Tsunami,Mild,2024-04-02 06:55,67,72.416,112.852,19929,16824,22440,19132,9,Shortage of medical supplies,9,Less than 50%
+Tsunami,Mild,2024-03-28 09:21,17,80.142,1.96,8888,6604,33127,23511,6,Shortage of medical supplies,11,Greater than 75%
+Flood,Moderate,2023-11-14 16:44,30,6.604,124.982,15120,10989,27332,23109,8,No major issues,2,Between 50% and 75%
+Earthquake,Severe,2023-11-19 11:06,47,-54.962,19.16,3409,2649,39514,33700,6,Delay in transportation,4,Less than 50%
+Tsunami,Moderate,2024-08-06 22:30,62,87.622,20.819,12980,11045,23045,18908,8,Delay in transportation,2,Less than 50%
+Earthquake,Severe,2024-05-06 18:01,33,54.714,6.96,5880,4828,43784,31872,11,No major issues,4,Between 50% and 75%
+Flood,Severe,2024-06-21 09:13,65,-36.138,-58.906,17702,14276,46891,35635,2,No major issues,7,Greater than 75%
+Earthquake,Moderate,2023-12-12 22:23,49,-34.618,143.556,1873,1534,27401,24480,11,Shortage of perishable items,2,Between 50% and 75%
+Tsunami,Mild,2023-11-19 12:18,45,23.225,43.105,13458,9818,25872,18273,3,Shortage of perishable items,2,Between 50% and 75%
+Tsunami,Moderate,2024-07-17 08:19,21,-15.667,-106.599,17443,14913,40907,35775,2,Shortage of perishable items,10,Less than 50%
+Flood,Moderate,2024-07-11 10:26,54,-3.893,-44.343,6674,5285,44939,34534,7,No major issues,11,Between 50% and 75%
+Earthquake,Mild,2024-08-22 04:24,29,10.456,-99.048,10752,9184,23584,19764,9,No major issues,9,Less than 50%
+Flood,Severe,2023-11-30 12:28,29,-38.198,26.452,18799,14586,35856,30967,4,No major issues,2,Less than 50%
+Flood,Mild,2023-11-15 09:43,34,76.322,56.15,16698,12403,45296,34163,10,No major issues,4,Less than 50%
+Flood,Severe,2024-04-27 19:47,49,-46.929,-161.724,18401,13711,25259,17946,8,No major issues,9,Less than 50%
+Flood,Mild,2023-11-08 08:03,12,83.613,172.048,6175,4825,41175,32754,5,No major issues,7,Less than 50%
+Flood,Mild,2024-08-30 10:27,70,48.37,54.828,8609,6947,12444,10983,4,Shortage of medical supplies,4,Less than 50%
+Tsunami,Moderate,2023-12-19 18:38,23,78.59,166.367,10485,9178,10607,8057,11,Delay in transportation,7,Less than 50%
+Tsunami,Severe,2024-02-17 04:03,46,4.377,140.134,5397,4696,40672,30689,3,No major issues,4,Greater than 75%
+Tsunami,Severe,2024-04-26 10:37,28,39.348,-174.93,12046,10337,47210,39414,5,Shortage of perishable items,11,Greater than 75%
+Tsunami,Moderate,2024-06-22 09:41,44,-30.973,-35.7,4125,3039,19215,15285,5,Delay in transportation,6,Less than 50%
+Earthquake,Moderate,2024-07-31 08:21,60,-41.941,-61.335,19772,13885,33563,28144,2,Delay in transportation,9,Less than 50%
+Earthquake,Moderate,2023-12-19 11:18,55,0.454,142.243,11190,9377,29335,22690,5,Shortage of perishable items,4,Between 50% and 75%
+Earthquake,Moderate,2024-03-12 02:28,59,87.991,-45.495,18997,16765,45226,38912,5,Shortage of perishable items,12,Greater than 75%
+Flood,Mild,2024-04-05 21:24,45,-9.585,73.356,3559,3144,17353,12361,10,Shortage of perishable items,11,Between 50% and 75%
+Earthquake,Mild,2024-03-18 14:44,32,63.807,-20.937,7730,6519,42035,30189,10,Shortage of medical supplies,2,Between 50% and 75%
+Earthquake,Severe,2023-11-26 22:01,38,-7.776,-159.215,16151,13478,30196,25505,8,No major issues,2,Greater than 75%
+Earthquake,Severe,2024-02-06 07:55,16,-81.848,-55.97,3089,2496,13948,12370,3,Shortage of medical supplies,2,Less than 50%
+Tsunami,Mild,2024-06-06 16:14,61,-65.623,50.949,14774,11448,35066,27691,8,Shortage of medical supplies,3,Greater than 75%
+Flood,Severe,2024-06-23 13:09,20,27.636,-54.803,6848,6153,35759,28813,5,Delay in transportation,2,Less than 50%
+Tsunami,Severe,2023-12-31 00:57,58,8.0,11.496,8525,6389,32685,23893,5,Delay in transportation,2,Greater than 75%
+Tsunami,Severe,2024-05-22 23:20,61,78.523,140.055,8886,6586,16612,13601,9,Delay in transportation,5,Greater than 75%
+Earthquake,Moderate,2023-09-20 10:10,40,-47.819,-101.783,2849,2074,28957,21626,11,No major issues,11,Greater than 75%
+Flood,Moderate,2024-04-03 20:44,27,-35.682,-128.426,18080,13455,29693,22419,10,Shortage of perishable items,12,Greater than 75%
+Tsunami,Severe,2024-03-29 02:21,43,-81.561,-56.011,13489,11562,30888,25923,8,Shortage of perishable items,6,Less than 50%
+Earthquake,Severe,2023-12-06 22:40,42,-46.626,-98.876,5730,4934,13776,11192,8,Shortage of perishable items,8,Less than 50%
+Tsunami,Mild,2024-04-15 09:48,33,26.407,152.001,13159,9454,22483,15969,8,Delay in transportation,3,Less than 50%
+Flood,Severe,2023-11-19 19:07,54,10.593,-7.418,11910,9059,11004,8168,5,Delay in transportation,9,Less than 50%
+Flood,Severe,2024-07-20 01:28,57,-53.188,149.446,19090,14590,28550,22158,10,No major issues,6,Less than 50%
+Tsunami,Severe,2024-06-21 01:02,68,-0.49,-144.501,16384,13964,30986,27356,7,No major issues,8,Less than 50%
+Flood,Mild,2024-08-27 13:30,59,-63.734,-86.121,19977,16860,29345,21436,7,Shortage of perishable items,8,Between 50% and 75%
+Earthquake,Moderate,2024-05-10 20:36,47,27.829,66.545,9432,8042,42022,37538,12,Shortage of medical supplies,9,Less than 50%
+Flood,Moderate,2023-10-09 04:38,22,-64.807,16.757,7030,6210,45529,40887,2,Delay in transportation,3,Greater than 75%
+Earthquake,Mild,2024-06-24 08:39,38,-65.252,47.053,3227,2715,10599,7882,9,No major issues,2,Greater than 75%
+Flood,Severe,2024-09-10 15:05,71,20.973,-6.047,16986,11943,44879,36366,2,Delay in transportation,10,Greater than 75%
+Tsunami,Severe,2024-06-03 13:09,30,-86.914,112.737,15109,13012,21748,15689,3,Shortage of perishable items,5,Less than 50%
+Flood,Severe,2024-01-10 11:43,28,56.739,-83.763,14005,10024,36609,28986,5,Shortage of perishable items,6,Greater than 75%
+Earthquake,Severe,2023-09-20 11:06,66,26.981,-168.594,14280,11079,46221,36754,12,Delay in transportation,4,Less than 50%
+Tsunami,Moderate,2024-02-20 22:06,53,51.188,23.708,4124,3624,12788,9539,11,Shortage of medical supplies,6,Less than 50%
+Earthquake,Severe,2023-10-29 14:52,71,-39.533,15.491,2078,1529,30610,21522,5,Shortage of perishable items,8,Less than 50%
+Tsunami,Mild,2024-07-30 19:06,48,-46.715,120.474,13751,11487,45426,34812,4,Delay in transportation,10,Greater than 75%
+Tsunami,Mild,2024-04-20 10:47,18,-11.324,121.923,12160,9983,49033,38213,7,Delay in transportation,12,Less than 50%
+Tsunami,Moderate,2023-10-12 12:28,26,-25.954,158.811,15150,11167,48395,40271,3,No major issues,5,Greater than 75%
+Earthquake,Mild,2024-05-29 02:49,29,-62.24,76.204,6055,5134,30753,23745,3,Delay in transportation,6,Between 50% and 75%
+Tsunami,Moderate,2024-09-13 07:17,18,-66.149,-112.539,15707,12744,43583,34064,2,Delay in transportation,7,Between 50% and 75%
+Earthquake,Severe,2024-02-18 14:41,50,51.199,130.939,1404,1064,35414,30308,10,Shortage of perishable items,11,Between 50% and 75%
+Earthquake,Severe,2024-03-04 20:19,36,-59.49,-83.189,9795,7822,14146,10375,6,Shortage of medical supplies,6,Between 50% and 75%
+Earthquake,Moderate,2024-09-12 08:25,28,79.96,79.524,17246,14120,22815,18059,4,No major issues,2,Between 50% and 75%
+Tsunami,Severe,2024-01-07 14:54,36,54.734,-61.365,11968,9408,48954,35600,7,Shortage of perishable items,9,Less than 50%
+Earthquake,Moderate,2024-03-04 07:11,32,-37.539,70.185,17089,15269,25887,19808,6,Shortage of medical supplies,7,Less than 50%
+Flood,Mild,2024-05-22 21:32,49,89.508,-115.226,19025,13419,40252,35767,5,Shortage of medical supplies,6,Greater than 75%
+Earthquake,Moderate,2024-06-20 12:10,55,-0.125,48.001,8930,6702,20101,16946,8,Delay in transportation,9,Greater than 75%
+Tsunami,Severe,2023-09-26 14:17,37,6.186,152.458,14706,11893,33562,28203,10,Delay in transportation,3,Greater than 75%
+Earthquake,Severe,2024-01-19 01:23,54,-26.098,52.92,2451,1991,36189,32329,7,Shortage of medical supplies,3,Less than 50%
+Earthquake,Moderate,2024-02-08 19:47,26,1.922,6.767,19849,14771,34518,26862,12,Shortage of perishable items,7,Less than 50%
+Tsunami,Mild,2024-04-25 07:29,30,-15.124,166.222,4803,4160,19284,14842,7,Shortage of medical supplies,5,Between 50% and 75%
+Tsunami,Moderate,2024-03-05 04:42,42,-72.428,79.918,15825,12086,29678,21039,3,Delay in transportation,7,Greater than 75%
+Earthquake,Severe,2024-02-08 18:27,63,-60.416,174.204,8992,7222,46169,33796,10,Shortage of medical supplies,9,Less than 50%
+Tsunami,Severe,2024-01-10 19:58,23,-56.45,56.631,13962,9854,22931,18113,8,Shortage of medical supplies,2,Greater than 75%
+Earthquake,Mild,2024-05-26 04:34,29,45.419,111.143,3050,2487,45185,33319,7,Shortage of perishable items,9,Less than 50%
+Tsunami,Severe,2024-07-21 15:05,67,-1.893,167.73,11269,9233,35725,29201,7,No major issues,9,Greater than 75%
+Earthquake,Severe,2024-01-17 20:08,57,54.11,150.726,3777,3151,30524,22086,6,Delay in transportation,4,Less than 50%
+Flood,Mild,2024-07-03 07:37,44,-20.077,34.713,19835,15406,22173,17679,10,Shortage of perishable items,10,Less than 50%
+Tsunami,Moderate,2023-11-14 19:58,20,-56.322,123.115,2756,2406,10628,8469,5,Shortage of medical supplies,10,Between 50% and 75%
+Flood,Moderate,2024-04-30 06:08,38,33.245,-30.373,15544,12400,15417,12535,5,No major issues,2,Less than 50%
+Earthquake,Severe,2024-06-28 23:40,30,-59.722,-15.364,17230,13955,17419,14188,6,No major issues,10,Greater than 75%
+Earthquake,Severe,2023-11-24 19:21,40,8.344,176.319,4355,3689,26222,19916,2,Shortage of medical supplies,6,Less than 50%
+Earthquake,Moderate,2024-05-10 05:58,67,88.912,99.227,8764,6502,48530,40659,11,Shortage of medical supplies,4,Greater than 75%
+Earthquake,Mild,2024-02-06 14:06,64,-52.75,-158.631,12495,10076,49115,39672,7,No major issues,6,Between 50% and 75%
+Tsunami,Severe,2024-06-20 00:57,69,32.274,-145.719,14487,12802,28174,24607,4,Shortage of perishable items,5,Less than 50%
+Flood,Moderate,2024-07-11 00:49,65,-45.44,123.68,13868,11065,47842,39540,12,Shortage of medical supplies,8,Between 50% and 75%
+Earthquake,Severe,2023-12-21 12:29,62,68.423,-146.486,17895,15210,34187,27039,9,No major issues,11,Less than 50%
+Flood,Mild,2024-04-21 09:20,58,84.987,48.543,12738,11082,45024,35098,8,Shortage of perishable items,9,Less than 50%
+Tsunami,Moderate,2023-11-12 20:30,33,8.516,-132.986,16903,14497,13172,9341,12,Shortage of medical supplies,2,Less than 50%
+Earthquake,Moderate,2023-09-30 04:53,41,-89.878,164.891,7629,6859,18645,16341,6,Shortage of perishable items,6,Less than 50%
+Flood,Moderate,2024-08-31 01:23,28,-75.164,59.223,6423,4562,30021,25373,5,Shortage of medical supplies,12,Less than 50%
+Flood,Mild,2023-12-05 22:31,12,-51.584,-151.942,8411,6761,39167,27489,7,Delay in transportation,8,Greater than 75%
+Earthquake,Moderate,2024-08-24 19:53,16,-48.79,-147.841,4356,3139,34088,29867,4,Shortage of medical supplies,4,Greater than 75%
+Flood,Mild,2023-11-21 19:28,16,5.491,-176.949,6377,5025,23962,19783,4,Shortage of medical supplies,11,Greater than 75%
+Tsunami,Mild,2024-07-01 14:35,17,71.387,-129.595,5035,4118,35167,27089,8,No major issues,4,Less than 50%
+Tsunami,Severe,2023-11-25 06:27,17,-45.33,36.36,10336,8845,11757,10223,12,No major issues,5,Between 50% and 75%
+Flood,Severe,2024-06-28 03:08,24,44.612,-73.605,2788,2388,25685,20521,3,Shortage of perishable items,9,Greater than 75%
+Flood,Mild,2023-11-07 06:03,45,69.97,-175.656,12832,11379,18649,14497,11,Shortage of medical supplies,7,Between 50% and 75%
+Flood,Mild,2023-10-24 00:18,60,-5.217,175.452,3391,2385,14425,10137,5,Delay in transportation,2,Between 50% and 75%
+Flood,Moderate,2024-08-23 09:28,52,38.273,96.16,14879,12503,15401,12753,10,Shortage of perishable items,6,Less than 50%
+Tsunami,Mild,2023-11-10 11:33,44,75.766,170.753,6091,4917,35606,29100,12,Delay in transportation,6,Greater than 75%
+Tsunami,Severe,2023-10-06 15:45,66,-47.045,-91.987,15237,11019,49900,35479,12,Shortage of perishable items,3,Less than 50%
+Flood,Mild,2024-02-25 22:58,56,-87.957,-1.291,12360,9944,26990,19794,4,No major issues,3,Greater than 75%
+Earthquake,Moderate,2024-07-06 22:35,63,-12.722,8.588,9616,8101,47791,39451,9,Shortage of medical supplies,10,Less than 50%
+Earthquake,Moderate,2024-09-15 13:59,66,12.04,-47.632,9359,7998,47611,39746,3,Shortage of perishable items,10,Less than 50%
+Earthquake,Mild,2023-12-19 18:18,27,-81.723,-48.968,5917,4353,12317,9983,12,Shortage of medical supplies,5,Less than 50%
+Earthquake,Moderate,2024-02-27 01:42,70,39.652,-82.347,3552,2892,17825,14267,2,Shortage of perishable items,5,Between 50% and 75%
+Earthquake,Moderate,2024-06-26 07:35,16,67.858,131.772,11180,8557,46247,36597,7,Shortage of perishable items,6,Between 50% and 75%
+Tsunami,Severe,2024-08-26 03:12,51,-46.335,-47.421,17166,15441,22807,19305,10,Shortage of perishable items,4,Less than 50%
+Tsunami,Mild,2024-07-02 21:16,26,7.478,48.939,1314,1169,10095,8598,8,No major issues,3,Less than 50%
+Flood,Mild,2024-05-24 17:28,38,-1.435,-158.438,5665,4771,16096,11408,5,Shortage of medical supplies,7,Between 50% and 75%
+Flood,Mild,2024-03-24 20:19,49,-72.796,-131.935,13922,9953,47212,33636,12,Shortage of perishable items,5,Less than 50%
+Tsunami,Moderate,2024-08-16 18:55,71,54.147,72.261,11690,8926,27822,20775,5,Shortage of perishable items,11,Less than 50%
+Earthquake,Mild,2023-10-25 01:37,22,-9.078,-66.948,4956,4000,23607,18658,9,No major issues,3,Less than 50%
+Earthquake,Severe,2024-02-29 17:17,31,58.75,70.876,2321,1724,31482,22971,5,No major issues,8,Between 50% and 75%
+Earthquake,Severe,2023-12-28 14:18,31,-43.17,176.644,2018,1796,39635,32151,10,Shortage of perishable items,3,Between 50% and 75%
+Earthquake,Mild,2023-10-02 16:50,19,-87.848,118.934,8283,6014,36252,28075,12,Delay in transportation,11,Greater than 75%
+Tsunami,Mild,2024-05-23 19:11,13,89.489,-108.81,15530,13384,16027,14120,7,Delay in transportation,2,Between 50% and 75%
+Earthquake,Mild,2024-02-09 10:22,71,13.299,115.807,13943,11143,35082,29351,4,No major issues,5,Less than 50%
+Tsunami,Moderate,2024-01-09 10:58,40,69.016,-167.526,9053,7509,42695,33404,10,Shortage of medical supplies,2,Less than 50%
+Tsunami,Moderate,2024-02-22 04:36,20,-14.538,51.355,18229,13668,45629,39193,8,No major issues,9,Between 50% and 75%
+Tsunami,Moderate,2024-05-23 09:06,70,11.817,-64.222,9861,7257,30897,25317,2,No major issues,2,Between 50% and 75%
+Flood,Moderate,2024-02-29 07:33,61,15.118,-96.206,6230,4485,25804,19438,2,Shortage of perishable items,11,Less than 50%
+Tsunami,Mild,2023-09-21 22:51,23,-47.421,-65.518,12756,11260,11848,9960,7,Shortage of perishable items,11,Less than 50%
+Tsunami,Severe,2024-02-02 17:27,31,-58.4,-166.333,2840,2120,24339,17134,9,Delay in transportation,7,Greater than 75%
+Earthquake,Mild,2023-11-06 15:08,33,39.049,150.761,11603,8260,19680,16084,4,Delay in transportation,10,Less than 50%
+Earthquake,Moderate,2024-04-13 11:00,57,79.546,-37.586,4310,3307,31142,22649,4,Shortage of medical supplies,12,Between 50% and 75%
+Flood,Moderate,2024-07-29 02:19,23,37.293,22.312,12692,9451,48597,41933,8,No major issues,6,Less than 50%
+Earthquake,Severe,2024-04-27 08:25,12,80.782,161.531,13831,12035,47190,33338,11,No major issues,11,Less than 50%
+Flood,Severe,2024-08-07 15:55,18,78.604,-129.368,3549,2653,30939,22696,3,No major issues,9,Less than 50%
+Tsunami,Mild,2024-05-15 15:51,27,34.772,-53.827,4540,3832,13155,10223,8,Shortage of perishable items,8,Between 50% and 75%
+Tsunami,Moderate,2023-12-24 14:26,46,-22.437,118.371,19941,16554,24783,18154,3,Delay in transportation,6,Less than 50%
+Tsunami,Moderate,2023-11-04 11:50,72,-71.149,-56.949,13303,9740,14915,12072,3,No major issues,11,Greater than 75%
+Tsunami,Severe,2024-05-25 03:29,13,-12.362,55.309,15227,11137,16636,12746,5,Shortage of medical supplies,10,Greater than 75%
+Flood,Severe,2024-04-24 15:41,28,28.908,-72.936,4142,2940,47471,38448,9,Shortage of perishable items,2,Less than 50%
+Earthquake,Moderate,2024-08-27 18:50,17,-36.981,58.327,16739,12385,11686,8663,12,No major issues,3,Between 50% and 75%
+Earthquake,Moderate,2024-07-17 02:35,62,-18.456,-3.925,9683,6954,45659,35500,7,Shortage of medical supplies,7,Less than 50%
+Tsunami,Mild,2023-10-07 15:23,28,-10.847,-85.176,9800,7965,19904,16927,12,Delay in transportation,3,Greater than 75%
+Tsunami,Severe,2024-09-12 06:40,38,84.727,32.302,19140,13631,35369,30547,8,Shortage of medical supplies,11,Less than 50%
+Tsunami,Moderate,2024-05-13 19:56,17,-18.935,127.418,2137,1710,43870,37732,12,Shortage of perishable items,3,Greater than 75%
+Tsunami,Mild,2024-06-30 19:57,72,87.186,169.979,7315,5305,37746,27013,12,Shortage of medical supplies,5,Greater than 75%
+Earthquake,Severe,2023-11-14 11:47,28,-32.445,81.757,3195,2292,46461,36215,7,No major issues,10,Between 50% and 75%
+Earthquake,Severe,2024-02-13 11:18,51,15.764,101.407,4687,3669,19712,16032,11,Delay in transportation,3,Between 50% and 75%
+Earthquake,Moderate,2024-09-11 19:46,67,6.414,-56.207,14464,10888,41823,34060,9,Delay in transportation,4,Less than 50%
+Tsunami,Mild,2024-01-17 19:36,51,19.558,69.718,2270,1768,31724,26587,2,Shortage of medical supplies,6,Less than 50%
+Earthquake,Moderate,2023-10-16 21:03,64,52.857,-68.058,17109,14913,16436,14701,5,Shortage of perishable items,6,Greater than 75%
+Tsunami,Moderate,2023-12-30 19:10,29,41.184,37.792,3925,2895,23853,21054,8,Shortage of medical supplies,10,Less than 50%
+Earthquake,Severe,2023-11-26 18:12,62,-61.385,-67.996,17606,13744,44359,38852,2,Shortage of perishable items,5,Less than 50%
+Earthquake,Mild,2024-07-17 19:42,14,-7.839,150.491,7524,5679,40423,32379,12,Delay in transportation,12,Less than 50%
+Earthquake,Moderate,2023-10-26 05:47,43,16.928,-116.07,16551,13528,32921,25311,6,Delay in transportation,6,Less than 50%
+Tsunami,Mild,2024-07-06 06:46,22,63.688,100.739,8022,6990,24752,20681,6,Shortage of medical supplies,10,Less than 50%
+Flood,Mild,2024-06-11 09:36,42,74.073,53.054,1277,951,49868,42937,6,No major issues,8,Less than 50%
+Tsunami,Moderate,2024-06-17 06:51,28,-50.722,-71.228,18060,15619,36027,29430,2,No major issues,10,Greater than 75%
+Flood,Severe,2024-07-13 09:07,30,-36.274,-141.082,3091,2371,28119,23285,6,No major issues,12,Greater than 75%
+Flood,Moderate,2024-04-28 17:43,24,-63.013,95.571,2860,2462,49323,38512,7,Shortage of perishable items,2,Greater than 75%
+Tsunami,Moderate,2024-05-29 12:51,28,73.244,-34.344,2157,1761,47489,40992,7,Shortage of perishable items,12,Between 50% and 75%
+Flood,Moderate,2023-12-15 05:07,70,79.32,-50.941,10836,9417,46585,34297,3,Shortage of medical supplies,4,Greater than 75%
+Tsunami,Severe,2024-02-10 19:11,63,10.626,148.545,11998,9968,24565,18941,6,Shortage of medical supplies,7,Less than 50%
+Tsunami,Severe,2024-07-19 05:50,30,-6.523,-137.599,2758,2408,48245,39370,11,Delay in transportation,9,Less than 50%
+Flood,Mild,2023-10-12 00:33,67,32.526,10.742,14536,10332,19881,14462,5,No major issues,8,Between 50% and 75%
+Tsunami,Mild,2024-01-10 23:34,32,65.231,-115.072,3648,2909,21588,16464,2,Delay in transportation,9,Less than 50%
+Earthquake,Mild,2024-04-16 20:02,48,47.607,-3.752,3884,2819,38423,31764,8,Shortage of medical supplies,9,Less than 50%
+Earthquake,Mild,2024-07-09 01:50,46,-54.105,-45.683,1461,1283,44801,33068,12,Delay in transportation,12,Greater than 75%
+Earthquake,Mild,2024-07-31 06:53,56,67.857,-67.647,4365,3390,48579,36979,3,Delay in transportation,6,Less than 50%
+Tsunami,Severe,2024-05-14 07:28,45,17.347,-58.379,5384,4137,42124,32513,5,Shortage of perishable items,8,Less than 50%
+Earthquake,Mild,2023-10-01 11:16,58,87.278,-103.972,1718,1405,21074,15270,12,Delay in transportation,8,Greater than 75%
+Tsunami,Severe,2024-03-02 13:01,51,-81.254,178.085,4542,3773,11293,8014,3,Shortage of medical supplies,9,Less than 50%
+Earthquake,Severe,2024-01-09 05:55,28,-4.609,-124.874,1304,991,16617,13833,6,Shortage of perishable items,8,Less than 50%
+Flood,Severe,2023-11-18 13:37,51,-68.808,-138.955,4482,3583,49911,36931,6,Shortage of perishable items,7,Greater than 75%
+Tsunami,Moderate,2024-02-23 10:40,22,-82.907,-1.312,7805,6537,41500,31794,2,Delay in transportation,12,Less than 50%
+Earthquake,Severe,2023-11-20 11:37,54,-1.061,161.801,17767,12703,16638,14657,12,Shortage of perishable items,9,Less than 50%
+Tsunami,Moderate,2023-10-18 23:34,15,-72.034,-117.107,2292,1995,33607,28912,7,Shortage of medical supplies,3,Less than 50%
+Earthquake,Mild,2024-01-15 15:29,66,-65.089,52.992,11769,9079,38686,34469,6,Delay in transportation,7,Less than 50%
+Earthquake,Mild,2024-03-24 13:16,37,-17.955,-15.646,13639,11429,41342,35553,12,Shortage of perishable items,3,Less than 50%
+Flood,Severe,2024-07-11 18:52,15,86.682,123.966,4398,3444,48715,38803,11,Shortage of medical supplies,4,Greater than 75%
+Tsunami,Moderate,2023-09-27 02:33,51,-84.813,66.407,5281,4206,41989,30340,8,Shortage of medical supplies,2,Less than 50%
+Tsunami,Severe,2024-02-27 16:28,32,-87.775,132.6,18197,15531,47791,40371,5,No major issues,10,Between 50% and 75%
+Flood,Severe,2024-01-09 20:26,51,-72.856,58.217,9145,7282,35223,25703,10,Delay in transportation,2,Greater than 75%
+Earthquake,Severe,2024-06-21 20:27,66,-5.528,-1.499,6419,4589,42220,32261,7,No major issues,2,Between 50% and 75%
+Earthquake,Severe,2023-11-29 11:26,53,-21.845,114.157,3583,2837,47554,37549,9,Shortage of medical supplies,7,Less than 50%
+Tsunami,Severe,2023-09-19 21:49,53,-86.802,-34.762,2174,1764,10011,8661,11,No major issues,10,Between 50% and 75%
+Earthquake,Severe,2023-11-14 10:36,54,-7.883,-57.292,2778,2398,39783,30489,11,Shortage of medical supplies,12,Less than 50%
+Flood,Moderate,2024-08-13 23:47,19,-72.461,57.208,1071,822,29135,23585,7,Delay in transportation,2,Less than 50%
+Tsunami,Mild,2023-11-26 04:25,64,39.034,79.761,4504,3381,22839,16843,8,Shortage of perishable items,9,Less than 50%
+Flood,Moderate,2024-06-03 14:56,18,46.287,-163.26,5037,4303,39524,31282,11,Shortage of perishable items,9,Less than 50%
+Flood,Severe,2023-09-19 03:41,15,9.581,-24.188,16824,14887,21613,18119,4,Shortage of perishable items,3,Less than 50%
+Flood,Severe,2023-11-23 20:29,50,68.885,1.48,13604,10661,49911,44080,5,No major issues,8,Less than 50%
+Tsunami,Moderate,2024-06-23 16:25,63,-65.993,-31.412,17786,13513,45901,40032,10,Shortage of perishable items,5,Less than 50%
+Flood,Severe,2024-05-07 22:23,30,33.59,151.629,5347,4792,21653,17339,12,No major issues,3,Greater than 75%
+Tsunami,Severe,2024-08-11 00:56,42,14.905,159.363,14679,12254,44989,34065,8,Delay in transportation,10,Less than 50%
+Earthquake,Moderate,2024-03-19 00:45,21,-80.448,-159.622,9748,8286,20547,18424,12,No major issues,4,Less than 50%
+Flood,Moderate,2024-05-07 19:46,25,45.647,-168.37,15830,11405,46823,40874,12,Shortage of medical supplies,5,Between 50% and 75%
+Flood,Moderate,2023-12-08 10:51,56,29.609,153.535,13699,10730,30490,27232,2,Delay in transportation,6,Less than 50%
+Flood,Moderate,2023-12-17 19:16,65,-49.401,48.164,13050,11105,45822,38842,5,Shortage of perishable items,6,Between 50% and 75%
+Earthquake,Severe,2024-03-07 14:13,16,-56.344,-117.434,17837,12911,12663,9949,10,No major issues,4,Less than 50%
+Flood,Moderate,2024-05-18 19:21,12,-30.499,75.488,6072,4298,31143,25517,12,No major issues,9,Between 50% and 75%
+Flood,Moderate,2024-06-16 04:29,16,51.126,-65.571,8207,7315,44118,31484,10,Shortage of perishable items,8,Between 50% and 75%
+Flood,Moderate,2023-12-06 17:04,17,-27.107,138.023,11875,9098,29239,21744,11,Shortage of medical supplies,10,Greater than 75%
+Flood,Mild,2023-09-20 05:38,19,30.409,-19.56,8989,8016,31032,24089,3,Shortage of medical supplies,6,Between 50% and 75%
+Flood,Moderate,2024-06-10 11:50,13,74.04,115.959,13286,10666,43340,34200,2,No major issues,12,Less than 50%
+Tsunami,Severe,2023-11-25 04:15,17,80.678,-119.738,18628,15026,14290,10605,12,Shortage of perishable items,12,Between 50% and 75%
+Earthquake,Mild,2023-12-30 16:42,46,59.175,136.309,15261,12656,14726,12507,4,Delay in transportation,9,Greater than 75%
+Tsunami,Mild,2024-03-25 15:56,17,-76.815,-115.923,9254,7510,47680,41210,6,Shortage of medical supplies,8,Between 50% and 75%
+Flood,Moderate,2024-06-24 18:14,39,-33.047,-39.779,4876,3934,14144,12039,11,Delay in transportation,3,Less than 50%
+Flood,Mild,2024-07-20 07:19,30,51.641,-71.514,3834,2899,38683,30028,12,Delay in transportation,9,Less than 50%
+Flood,Mild,2023-12-04 09:44,20,44.416,106.837,18882,14331,19442,14768,12,No major issues,2,Between 50% and 75%
+Flood,Mild,2023-09-19 11:35,19,-82.481,26.179,13913,11233,15578,11853,7,Shortage of perishable items,8,Greater than 75%
+Flood,Mild,2024-07-28 22:53,22,-56.881,42.079,9281,6857,21885,18256,11,Delay in transportation,10,Between 50% and 75%
+Flood,Severe,2024-04-09 11:59,16,-37.683,-155.749,4217,3118,48049,38316,7,No major issues,4,Greater than 75%
+Flood,Mild,2024-04-24 14:13,18,-38.675,-154.869,7340,5604,39533,30269,12,No major issues,11,Less than 50%
+Flood,Severe,2024-01-18 00:39,35,55.386,165.117,6525,4573,26133,22399,12,Shortage of medical supplies,6,Less than 50%
+Earthquake,Severe,2024-06-20 15:23,58,-30.319,-7.217,15593,12033,30019,23936,3,Shortage of perishable items,12,Greater than 75%
+Earthquake,Moderate,2024-02-03 12:20,66,58.76,140.867,7436,5596,15011,12691,2,Delay in transportation,11,Between 50% and 75%
+Tsunami,Severe,2023-10-29 03:36,25,73.135,18.574,18808,16528,45368,36041,4,No major issues,8,Less than 50%
+Flood,Severe,2024-05-13 00:55,66,-37.62,-12.708,17725,12728,33846,27091,12,Shortage of perishable items,11,Greater than 75%
+Earthquake,Severe,2023-11-16 11:58,20,-9.68,-115.508,19540,16254,19581,16588,9,No major issues,2,Less than 50%
+Tsunami,Mild,2023-12-06 16:41,16,-42.416,-95.753,7775,6247,33674,26185,9,Delay in transportation,2,Greater than 75%
+Tsunami,Mild,2023-12-17 01:18,57,84.319,48.084,9961,8635,27256,22233,11,Shortage of perishable items,8,Greater than 75%
+Tsunami,Moderate,2024-05-31 22:40,49,27.601,120.769,17930,13453,24607,19766,7,No major issues,9,Between 50% and 75%
+Flood,Mild,2024-02-11 08:27,44,68.766,-21.636,8536,6106,28403,21083,4,Shortage of perishable items,7,Greater than 75%
+Flood,Mild,2024-08-31 17:31,54,-48.538,112.022,4713,3752,41379,32929,11,Shortage of perishable items,12,Between 50% and 75%
+Earthquake,Mild,2024-03-10 18:04,14,-66.981,33.245,5414,4471,12568,11036,4,Delay in transportation,4,Less than 50%
+Earthquake,Severe,2024-09-04 15:29,37,17.884,22.898,1610,1409,28576,25416,5,Shortage of medical supplies,11,Between 50% and 75%
+Tsunami,Mild,2024-04-19 06:55,26,59.465,36.302,6959,5738,43476,32733,12,No major issues,9,Greater than 75%
+Flood,Mild,2024-07-05 14:16,26,-21.922,-132.403,1542,1141,43053,36029,4,Delay in transportation,4,Between 50% and 75%
+Flood,Severe,2023-10-28 04:15,14,67.995,11.315,4850,3485,18541,16323,10,Delay in transportation,12,Greater than 75%
+Tsunami,Severe,2024-07-18 21:41,38,-23.332,-164.362,18361,14427,41596,35685,8,No major issues,11,Greater than 75%
+Flood,Severe,2024-05-04 21:58,18,-13.412,-88.374,8618,7601,15493,11722,10,Shortage of medical supplies,6,Less than 50%
+Earthquake,Severe,2024-04-29 14:53,59,52.096,28.075,4861,3908,34577,28730,7,Shortage of medical supplies,7,Less than 50%
+Earthquake,Moderate,2023-09-26 00:49,53,15.367,-85.931,18567,14569,33962,27929,12,Shortage of medical supplies,5,Between 50% and 75%
+Flood,Severe,2024-02-11 08:13,42,-57.83,21.274,16851,12650,30096,24544,8,Shortage of perishable items,12,Less than 50%
+Flood,Mild,2024-08-23 17:30,40,50.96,161.728,4285,3183,36251,31074,10,Delay in transportation,4,Less than 50%
+Flood,Mild,2024-05-20 14:11,63,-73.604,-127.682,15266,10955,27241,20276,3,Delay in transportation,8,Between 50% and 75%
+Flood,Severe,2024-01-21 01:03,45,-38.436,166.871,2882,2562,21486,17791,9,Delay in transportation,5,Greater than 75%
+Flood,Moderate,2024-04-13 01:21,24,-83.95,35.825,17902,15032,21107,17620,7,Shortage of perishable items,12,Less than 50%
+Earthquake,Mild,2024-07-18 03:43,29,50.341,-52.874,13948,10894,23127,18583,3,Delay in transportation,10,Less than 50%
+Flood,Severe,2024-07-15 09:52,70,14.928,-54.909,10060,7497,22748,17992,8,Delay in transportation,6,Less than 50%
+Tsunami,Severe,2024-03-12 22:26,18,10.554,1.141,12140,10797,43638,38896,10,No major issues,9,Less than 50%
+Flood,Moderate,2024-08-14 18:46,61,-46.211,-57.722,16035,13410,48458,42274,9,Delay in transportation,6,Less than 50%
+Tsunami,Severe,2024-04-30 07:57,62,88.956,63.689,8534,7339,37028,32995,10,Delay in transportation,6,Less than 50%
+Tsunami,Mild,2024-07-31 11:22,37,31.266,115.587,3491,2830,21697,17255,7,Shortage of perishable items,11,Less than 50%
+Earthquake,Severe,2024-01-05 20:06,55,77.446,-111.54,7542,5633,25863,22618,5,Shortage of perishable items,5,Less than 50%
+Flood,Moderate,2023-12-24 14:31,21,50.209,-136.844,3571,2982,42287,34792,10,Delay in transportation,9,Less than 50%
+Flood,Moderate,2024-04-20 02:35,43,71.662,137.155,19825,17322,42165,31057,10,No major issues,8,Less than 50%
+Flood,Mild,2024-03-20 12:32,15,4.632,-27.657,18719,13225,32759,25510,12,Shortage of perishable items,9,Less than 50%
+Flood,Severe,2024-07-08 21:38,41,-33.183,-176.969,7905,6133,16602,12701,11,No major issues,4,Between 50% and 75%
+Tsunami,Mild,2023-10-12 22:37,29,-5.158,40.71,12990,9570,37783,28039,7,No major issues,8,Less than 50%
+Tsunami,Mild,2024-06-26 17:10,48,-66.395,27.321,8489,7324,27691,23836,10,Shortage of medical supplies,8,Less than 50%
+Earthquake,Severe,2024-04-26 18:53,21,-4.862,-176.493,14812,11848,43882,35403,7,Shortage of medical supplies,6,Less than 50%
+Flood,Severe,2024-01-24 02:10,15,-18.288,68.596,2967,2204,26665,21206,12,Delay in transportation,9,Greater than 75%
+Tsunami,Moderate,2023-12-21 01:26,35,-25.145,20.697,9444,7260,36985,26786,12,Shortage of perishable items,11,Between 50% and 75%
+Flood,Severe,2024-03-28 15:42,46,-58.583,100.911,12636,9666,43452,34652,9,Delay in transportation,8,Greater than 75%
+Tsunami,Moderate,2024-04-24 10:09,52,82.187,132.573,12055,9455,47462,37065,3,Delay in transportation,4,Less than 50%
+Earthquake,Moderate,2024-03-05 02:47,32,27.542,75.756,13958,10527,39156,33525,7,Shortage of medical supplies,8,Less than 50%
+Earthquake,Mild,2023-12-19 21:54,20,40.999,58.328,3623,2688,36020,25956,3,Shortage of medical supplies,10,Less than 50%
+Earthquake,Moderate,2024-01-15 04:03,45,47.699,-150.03,9600,7906,15525,12900,8,No major issues,5,Less than 50%
+Flood,Moderate,2024-03-19 20:45,40,22.767,-132.74,6590,4650,33385,29114,7,Shortage of medical supplies,9,Between 50% and 75%
+Tsunami,Severe,2024-06-13 06:52,40,-65.679,161.455,18671,13730,49163,38903,12,Shortage of medical supplies,10,Greater than 75%
+Flood,Severe,2024-08-01 16:19,31,73.606,-6.605,8442,7268,38957,29668,8,No major issues,4,Less than 50%
+Earthquake,Mild,2024-07-15 23:47,45,56.768,125.261,12268,9291,45068,31622,9,Shortage of medical supplies,6,Less than 50%
+Tsunami,Moderate,2024-02-06 10:15,50,-48.381,-177.402,13243,9769,46736,36800,5,Shortage of perishable items,12,Less than 50%
+Tsunami,Mild,2024-08-26 05:40,28,-75.742,45.116,17928,15290,27816,21054,10,No major issues,8,Less than 50%
+Earthquake,Mild,2024-06-04 05:18,20,-37.873,49.281,15836,11947,42243,31156,2,Shortage of perishable items,2,Between 50% and 75%
+Earthquake,Mild,2024-05-04 18:35,18,-39.219,-134.986,15366,12990,25257,18135,2,Shortage of medical supplies,5,Less than 50%
+Tsunami,Moderate,2024-02-15 20:14,62,53.903,179.267,16194,13593,12079,9253,4,Delay in transportation,6,Greater than 75%
+Tsunami,Mild,2024-03-05 09:05,46,-5.374,-110.811,9194,7938,10826,7842,5,Shortage of medical supplies,9,Less than 50%
+Flood,Mild,2023-11-11 23:28,24,-7.05,97.559,18076,15060,23660,18799,12,No major issues,7,Less than 50%
+Flood,Severe,2023-11-08 09:11,14,44.05,17.849,5002,3754,29583,21883,2,Shortage of perishable items,3,Less than 50%
+Flood,Moderate,2024-07-04 02:00,32,-87.288,105.981,4920,3833,25931,18198,2,Shortage of medical supplies,11,Less than 50%
+Tsunami,Mild,2024-01-05 05:03,27,-61.614,-147.095,12089,10712,13935,9921,12,Shortage of perishable items,10,Less than 50%
+Earthquake,Moderate,2023-12-25 10:30,26,-32.987,21.006,12380,10660,38751,32808,2,Shortage of medical supplies,7,Greater than 75%
+Earthquake,Moderate,2023-09-27 22:00,69,-82.892,74.385,19318,14661,42118,31081,4,No major issues,7,Greater than 75%
+Tsunami,Moderate,2024-06-18 06:17,67,59.643,149.211,19170,14033,44808,32754,6,No major issues,10,Less than 50%
+Tsunami,Mild,2024-02-29 05:29,61,24.845,-43.544,7079,6205,33860,28957,5,No major issues,3,Greater than 75%
+Flood,Moderate,2023-10-11 01:04,24,4.333,-0.882,19070,13936,28555,21830,12,No major issues,3,Less than 50%
+Flood,Severe,2023-12-20 16:19,16,-82.12,157.608,6853,5994,23243,16767,5,Delay in transportation,2,Between 50% and 75%
+Flood,Moderate,2024-01-01 09:07,54,-1.816,44.629,9386,6662,24465,20090,3,Delay in transportation,5,Greater than 75%
+Tsunami,Mild,2024-07-09 11:08,41,54.184,-158.148,19285,16367,37259,32206,2,No major issues,10,Less than 50%
+Flood,Mild,2023-12-12 23:08,65,-35.297,160.057,18022,12965,25139,20270,5,Shortage of perishable items,10,Greater than 75%
+Earthquake,Severe,2024-02-05 15:43,52,80.551,21.032,19289,15103,16914,14431,11,No major issues,12,Between 50% and 75%
+Flood,Severe,2023-12-14 11:03,39,68.908,-119.949,6911,5597,43075,33060,4,Shortage of medical supplies,7,Less than 50%
+Flood,Moderate,2024-02-21 01:45,66,-23.09,95.106,15109,13072,31197,25634,11,Shortage of perishable items,8,Greater than 75%
+Flood,Severe,2024-07-30 19:12,28,-25.198,-17.135,14011,9808,12271,11002,11,Delay in transportation,10,Less than 50%
+Tsunami,Mild,2024-04-14 04:49,31,87.191,-102.664,11318,7971,28085,24822,10,Shortage of perishable items,3,Less than 50%
+Tsunami,Moderate,2024-09-02 13:29,21,-65.087,-47.85,9187,6859,29680,21321,8,Shortage of perishable items,3,Greater than 75%
+Tsunami,Moderate,2024-02-18 12:17,23,-2.11,143.649,19881,17175,16249,13308,6,Delay in transportation,11,Less than 50%
+Earthquake,Mild,2023-12-07 15:02,70,48.762,-54.745,15231,11930,17899,15642,5,Delay in transportation,12,Greater than 75%
+Flood,Moderate,2024-07-26 18:10,15,-35.139,-165.174,18692,15196,31419,25150,5,Shortage of perishable items,2,Greater than 75%
+Flood,Moderate,2024-06-15 03:56,40,45.511,27.092,3951,2941,28991,24853,4,Shortage of perishable items,7,Less than 50%
+Tsunami,Severe,2023-09-30 00:51,59,-81.124,-36.291,3787,2952,38474,32886,4,Shortage of perishable items,9,Between 50% and 75%
+Earthquake,Moderate,2023-12-19 09:13,37,27.405,-109.404,18178,13619,14695,11069,8,No major issues,12,Between 50% and 75%
+Earthquake,Mild,2023-12-22 06:22,54,-15.555,-48.504,7241,5533,48920,40656,6,Shortage of perishable items,7,Greater than 75%
+Tsunami,Severe,2024-06-13 21:01,21,-10.717,152.717,8650,6400,34498,25224,3,Delay in transportation,2,Less than 50%
+Flood,Mild,2023-12-04 21:12,67,59.84,-76.433,12248,10273,17292,13159,9,Delay in transportation,7,Less than 50%
+Flood,Severe,2023-10-01 12:33,25,-53.316,8.376,9475,7672,19263,16161,12,Delay in transportation,8,Between 50% and 75%
+Flood,Severe,2023-11-19 02:23,14,-44.018,-158.36,7576,6498,27778,19739,12,Delay in transportation,3,Less than 50%
+Flood,Moderate,2024-07-25 21:49,54,63.375,57.636,4535,3191,35331,26365,8,Delay in transportation,7,Between 50% and 75%
+Flood,Severe,2023-12-27 13:24,17,-56.445,0.234,16007,12999,11408,8076,10,No major issues,7,Between 50% and 75%
+Tsunami,Severe,2024-05-05 00:16,22,-86.693,66.352,12645,10432,25479,22910,10,No major issues,2,Greater than 75%
+Tsunami,Moderate,2024-03-14 17:26,68,89.991,176.53,19184,17070,24783,18100,8,Shortage of perishable items,3,Greater than 75%
+Tsunami,Severe,2024-03-15 06:02,55,20.241,45.189,8452,6621,47545,34733,6,No major issues,9,Between 50% and 75%
+Earthquake,Mild,2023-09-23 17:46,53,-65.056,14.887,7629,6656,30250,25340,10,Shortage of perishable items,8,Greater than 75%
+Earthquake,Severe,2024-03-07 14:55,71,11.672,-123.103,3222,2614,17758,13084,4,Delay in transportation,7,Between 50% and 75%
+Tsunami,Moderate,2024-01-17 09:08,40,44.21,115.811,9971,7282,22316,16097,4,Delay in transportation,11,Greater than 75%
+Tsunami,Severe,2024-06-29 10:37,48,20.225,34.69,8566,7173,33544,24013,9,Shortage of perishable items,10,Greater than 75%
+Tsunami,Severe,2023-10-01 06:53,53,-22.687,126.767,17103,13592,20733,15314,2,Shortage of medical supplies,2,Less than 50%
+Tsunami,Mild,2024-05-07 05:15,59,30.841,-106.98,7703,5493,38788,33878,9,No major issues,9,Less than 50%
+Tsunami,Moderate,2024-04-15 23:11,61,-82.471,84.719,13464,11364,35831,29463,11,Delay in transportation,10,Less than 50%
+Tsunami,Moderate,2023-12-06 14:41,64,67.998,136.001,9051,7274,35926,32217,2,Shortage of medical supplies,10,Greater than 75%
+Flood,Mild,2023-09-29 18:22,24,-37.588,-36.706,10979,9384,28737,22767,8,No major issues,11,Less than 50%
+Flood,Severe,2023-10-22 08:24,69,-64.397,118.762,15801,11346,42811,30936,11,Shortage of perishable items,8,Between 50% and 75%
+Tsunami,Moderate,2024-06-28 02:10,13,-57.802,32.514,7616,6675,15910,11932,12,Shortage of perishable items,3,Less than 50%
+Earthquake,Severe,2024-05-21 00:38,40,24.133,-149.29,13585,11484,43532,35801,4,Shortage of medical supplies,10,Less than 50%
+Earthquake,Mild,2024-06-22 21:33,70,-29.665,133.67,5918,4334,19476,14329,2,Shortage of medical supplies,6,Less than 50%
+Flood,Moderate,2024-06-01 05:53,30,22.762,-137.681,5311,4737,10231,8435,6,Delay in transportation,9,Between 50% and 75%
+Tsunami,Severe,2024-08-03 10:39,63,-88.965,137.773,8794,6537,41176,32559,9,Delay in transportation,11,Greater than 75%
+Earthquake,Mild,2023-09-20 17:34,68,8.521,43.116,19269,16648,23607,16755,4,Delay in transportation,12,Less than 50%
+Earthquake,Mild,2024-01-06 07:04,66,-84.162,28.113,10779,8259,15747,11177,8,Shortage of perishable items,4,Greater than 75%
+Tsunami,Severe,2024-02-19 16:59,54,34.472,34.189,19421,14283,39841,33859,7,Delay in transportation,3,Greater than 75%
+Tsunami,Moderate,2024-01-24 11:24,35,71.555,115.295,15002,13031,14254,10812,4,Delay in transportation,6,Less than 50%
+Flood,Moderate,2024-08-31 22:12,45,-52.228,-104.742,2906,2097,44665,40084,9,No major issues,8,Greater than 75%
+Tsunami,Moderate,2023-11-10 16:44,45,13.526,44.368,5250,4320,42531,34192,12,Shortage of medical supplies,9,Less than 50%
+Flood,Mild,2024-08-09 13:29,57,-37.712,-110.32,4873,3434,17728,15024,5,Shortage of medical supplies,8,Less than 50%
+Tsunami,Moderate,2024-07-14 11:26,47,55.088,-103.558,7592,6362,26673,22886,6,No major issues,10,Between 50% and 75%
+Tsunami,Mild,2023-10-23 03:38,19,33.45,-57.11,19642,16169,11908,10317,5,No major issues,7,Greater than 75%
+Tsunami,Moderate,2024-03-08 14:50,63,-83.6,-131.129,6091,5027,45190,39730,9,Shortage of medical supplies,2,Between 50% and 75%
+Tsunami,Severe,2024-07-17 02:19,58,32.076,19.864,1613,1196,31739,27292,7,Delay in transportation,4,Less than 50%
+Earthquake,Moderate,2024-05-15 06:31,36,22.772,123.266,19709,16183,22280,18248,6,No major issues,2,Less than 50%
+Tsunami,Mild,2024-08-17 14:29,43,67.869,-46.23,10916,8113,29812,21911,7,Delay in transportation,5,Less than 50%
+Tsunami,Severe,2024-01-23 00:02,13,53.825,145.784,6048,4463,41684,35285,10,No major issues,7,Less than 50%
+Earthquake,Severe,2024-03-13 04:06,55,88.69,-106.133,2197,1739,44232,31987,6,Delay in transportation,12,Greater than 75%
+Earthquake,Moderate,2024-01-31 05:32,41,70.053,-142.883,11239,7917,30456,25210,5,No major issues,5,Less than 50%
+Tsunami,Moderate,2024-07-26 14:58,46,-32.553,-21.198,4855,3663,20321,15336,2,Delay in transportation,5,Between 50% and 75%
+Tsunami,Severe,2024-04-28 22:26,32,-41.211,159.58,10282,8377,21224,15159,11,No major issues,10,Between 50% and 75%
+Earthquake,Mild,2023-10-12 20:18,13,-5.268,63.179,4471,3472,15643,12284,4,Shortage of medical supplies,11,Less than 50%
+Tsunami,Moderate,2024-06-30 23:31,64,-54.334,93.025,18481,13227,40519,32964,3,Shortage of medical supplies,3,Between 50% and 75%
+Tsunami,Severe,2024-07-01 07:04,53,37.839,-12.457,8592,7642,19418,16936,11,No major issues,7,Between 50% and 75%
+Earthquake,Severe,2024-09-04 12:28,70,29.733,103.96,11641,9204,11983,8544,3,No major issues,9,Between 50% and 75%
+Earthquake,Moderate,2023-11-03 11:25,61,-27.249,26.884,17644,12714,17011,13016,12,Delay in transportation,6,Between 50% and 75%
+Tsunami,Moderate,2024-03-12 09:08,49,-15.58,43.515,18955,13871,41612,32322,7,Shortage of perishable items,11,Between 50% and 75%
+Tsunami,Severe,2023-09-23 03:39,62,-28.404,69.888,6671,5553,15104,12806,11,Shortage of medical supplies,3,Greater than 75%
+Flood,Moderate,2024-08-05 10:29,32,9.916,115.928,6772,5157,36594,26125,3,Shortage of medical supplies,7,Between 50% and 75%
+Flood,Severe,2023-09-24 21:18,15,-73.704,114.132,1006,856,19779,15637,6,Shortage of medical supplies,11,Between 50% and 75%
+Tsunami,Mild,2023-12-26 00:07,25,32.673,-66.025,19686,16907,29958,26473,8,No major issues,3,Between 50% and 75%
+Earthquake,Severe,2024-01-25 19:52,44,-17.244,-134.08,10639,7580,45971,41078,2,No major issues,3,Less than 50%
+Earthquake,Mild,2023-12-09 12:14,39,36.4,-38.063,11424,9623,36609,28420,10,Shortage of perishable items,12,Less than 50%
+Tsunami,Mild,2023-10-27 10:07,24,9.976,123.598,12805,11114,20110,15237,12,Shortage of perishable items,4,Less than 50%
+Earthquake,Severe,2023-10-14 22:47,13,-64.081,138.56,15310,13702,18898,13548,12,Shortage of medical supplies,9,Greater than 75%
+Flood,Moderate,2024-03-30 21:31,51,-57.636,3.389,19089,16493,35212,27150,4,Shortage of medical supplies,11,Less than 50%
+Flood,Moderate,2023-11-17 09:28,66,41.564,76.367,9822,7682,45793,37333,2,Delay in transportation,11,Between 50% and 75%
+Flood,Moderate,2024-05-12 05:48,19,14.448,166.226,3623,2639,44498,39902,6,Shortage of medical supplies,10,Less than 50%
+Flood,Severe,2024-06-13 12:33,17,-45.858,47.039,3558,2977,45336,38971,6,Delay in transportation,7,Between 50% and 75%
+Earthquake,Moderate,2024-09-13 13:28,41,2.279,-11.076,11863,9303,29308,22210,2,No major issues,11,Less than 50%
+Earthquake,Severe,2024-06-26 12:06,42,14.065,26.23,10560,9100,11789,8928,3,Shortage of perishable items,10,Less than 50%
+Tsunami,Moderate,2024-04-10 03:21,20,20.844,-80.922,9419,6620,17310,14207,11,Shortage of perishable items,12,Between 50% and 75%
+Tsunami,Mild,2023-12-20 11:07,28,50.855,-94.969,6924,5953,12168,9351,3,Shortage of perishable items,11,Less than 50%
+Tsunami,Moderate,2024-06-17 04:14,61,-21.03,57.84,6481,4810,32614,23184,6,Delay in transportation,2,Less than 50%
+Tsunami,Moderate,2023-10-03 15:17,42,-35.754,88.614,18449,13776,35563,28269,4,Shortage of medical supplies,2,Less than 50%
+Tsunami,Moderate,2024-04-21 22:06,55,-33.176,10.891,2344,1686,44818,37086,8,No major issues,7,Less than 50%
+Tsunami,Mild,2023-11-27 05:53,28,27.782,-39.185,8923,7556,48582,41493,10,No major issues,12,Greater than 75%
+Earthquake,Moderate,2024-03-12 17:14,47,-88.096,-176.949,3226,2265,16402,13204,12,Shortage of medical supplies,7,Less than 50%
+Flood,Moderate,2023-10-22 19:49,28,-55.246,-171.468,4012,2854,48937,40682,5,Delay in transportation,3,Less than 50%
+Flood,Mild,2024-08-14 06:00,36,28.151,143.963,19548,16823,22108,19437,4,No major issues,6,Between 50% and 75%
+Flood,Mild,2024-03-29 22:25,52,-8.38,178.289,14991,12569,31194,23441,3,No major issues,2,Less than 50%
+Tsunami,Moderate,2023-09-26 23:44,15,-43.517,112.608,6830,5382,42225,37828,5,Shortage of medical supplies,4,Greater than 75%
+Tsunami,Mild,2024-04-20 10:43,21,7.314,-24.749,4481,3954,26973,19438,3,Delay in transportation,11,Greater than 75%
+Tsunami,Moderate,2024-08-06 03:40,13,71.372,-126.412,1028,911,35590,26809,7,Shortage of medical supplies,11,Less than 50%
+Flood,Severe,2024-08-08 05:02,72,48.778,-7.87,14235,12367,14594,11792,2,Shortage of medical supplies,9,Less than 50%
+Flood,Severe,2024-01-28 17:59,71,88.488,-59.962,10923,8521,15941,12323,7,Delay in transportation,9,Greater than 75%
+Tsunami,Severe,2024-09-01 19:58,24,-58.209,-165.841,13588,11307,29586,24827,3,No major issues,9,Less than 50%
+Flood,Moderate,2024-08-28 10:09,59,-55.896,-167.149,1831,1545,48859,36531,8,Delay in transportation,10,Greater than 75%
+Tsunami,Moderate,2024-07-11 00:11,46,83.692,112.24,1537,1087,13673,10494,2,Shortage of medical supplies,3,Less than 50%
+Flood,Severe,2023-10-15 06:39,45,-7.493,64.108,18582,13560,47968,35812,3,Delay in transportation,4,Between 50% and 75%
+Flood,Mild,2024-09-07 08:06,42,73.292,42.614,8952,7522,18554,13041,12,Delay in transportation,6,Less than 50%
+Tsunami,Severe,2024-02-18 09:22,22,60.363,-156.975,4484,3241,48992,42125,5,Delay in transportation,5,Between 50% and 75%
+Tsunami,Severe,2024-07-14 20:07,55,-17.638,-136.511,19873,16080,31075,26950,5,Delay in transportation,11,Less than 50%
+Tsunami,Mild,2024-01-22 22:14,19,-40.699,92.718,6506,5460,46268,33914,5,Delay in transportation,4,Less than 50%
+Flood,Severe,2023-11-29 09:47,36,49.979,-174.373,16956,12142,10473,7706,3,No major issues,8,Greater than 75%
+Tsunami,Severe,2024-07-05 22:33,20,-52.891,50.337,18140,14332,25679,22793,11,Delay in transportation,11,Less than 50%
+Flood,Moderate,2023-09-21 22:47,51,81.054,45.789,10869,8364,10299,8358,5,Delay in transportation,10,Less than 50%
+Flood,Moderate,2023-12-20 13:47,67,47.003,14.3,8185,6489,23638,17853,5,Delay in transportation,4,Greater than 75%
+Tsunami,Moderate,2024-07-15 06:59,23,-61.243,152.162,2770,2296,28681,21278,6,No major issues,11,Greater than 75%
+Tsunami,Mild,2024-05-29 09:03,18,43.275,152.95,6763,4947,11904,9487,3,Delay in transportation,5,Greater than 75%
+Tsunami,Severe,2023-11-15 10:26,49,-31.325,-108.449,11672,8707,17217,13174,3,Shortage of perishable items,8,Less than 50%
+Tsunami,Mild,2024-07-13 20:42,16,-5.222,-5.613,15282,11140,49939,39501,8,No major issues,4,Between 50% and 75%
+Flood,Mild,2024-09-07 20:25,52,-25.454,-82.91,12006,8709,47268,33651,4,Delay in transportation,9,Between 50% and 75%
+Tsunami,Mild,2024-04-13 19:51,60,-28.156,139.107,6137,5264,21136,17239,10,Shortage of perishable items,3,Between 50% and 75%
+Flood,Moderate,2024-02-24 05:37,67,89.22,32.969,16163,12216,38056,32242,5,Shortage of perishable items,7,Between 50% and 75%
+Flood,Mild,2024-04-27 11:17,69,76.946,160.651,19799,17416,37379,33492,2,Shortage of medical supplies,10,Less than 50%
+Tsunami,Severe,2024-07-08 17:19,37,-3.732,107.286,4211,3328,25762,18461,2,Shortage of medical supplies,5,Less than 50%
+Tsunami,Moderate,2024-07-30 11:56,27,26.575,-147.337,16721,13942,20603,17320,11,Delay in transportation,9,Between 50% and 75%
+Earthquake,Severe,2023-10-22 05:49,37,-56.71,133.759,16214,13632,10089,8798,3,Shortage of medical supplies,7,Between 50% and 75%
+Earthquake,Moderate,2023-09-27 07:24,39,45.52,71.3,18774,15301,23575,20216,3,No major issues,2,Between 50% and 75%
+Flood,Moderate,2023-12-10 02:05,68,-80.719,-42.136,16248,13385,33958,26259,12,Delay in transportation,10,Greater than 75%
+Earthquake,Mild,2023-10-04 18:43,33,-47.046,-139.119,16679,14135,48018,41978,5,Shortage of perishable items,7,Less than 50%
+Tsunami,Severe,2024-06-26 17:26,55,-13.873,-160.394,13216,10163,41865,33504,3,Shortage of medical supplies,10,Greater than 75%
+Flood,Moderate,2023-11-22 11:23,40,21.771,107.965,3150,2323,40007,28703,8,Shortage of perishable items,6,Less than 50%
+Earthquake,Mild,2024-06-08 17:06,29,-69.836,-126.737,5931,5189,44123,39288,2,No major issues,8,Greater than 75%
+Flood,Mild,2024-04-02 03:12,42,-27.594,-20.21,1703,1291,14125,9949,5,No major issues,8,Between 50% and 75%
+Tsunami,Severe,2023-11-15 10:40,53,51.628,-4.987,18372,15953,39180,31014,11,Shortage of perishable items,6,Less than 50%
+Tsunami,Mild,2024-04-01 17:32,42,-23.058,-76.267,2550,1860,28637,22657,4,Shortage of perishable items,10,Less than 50%
+Earthquake,Mild,2024-07-29 17:20,65,37.46,145.696,6029,4414,17662,12508,7,Shortage of perishable items,9,Less than 50%
+Tsunami,Mild,2024-03-26 18:30,25,11.248,-167.512,11385,10196,19695,15255,10,Shortage of perishable items,10,Less than 50%
+Earthquake,Mild,2024-04-26 10:27,37,77.592,96.667,16009,14176,20227,14176,10,No major issues,12,Greater than 75%
+Tsunami,Moderate,2023-10-15 20:26,69,-37.831,159.843,19799,16500,47043,39784,9,No major issues,3,Greater than 75%
+Tsunami,Mild,2024-07-11 23:04,20,32.042,-137.925,1812,1413,24441,19288,3,No major issues,2,Greater than 75%
+Flood,Mild,2023-10-26 01:55,49,4.758,101.262,10107,7470,15478,12501,9,Delay in transportation,10,Between 50% and 75%
+Earthquake,Moderate,2024-01-29 09:51,32,18.571,4.16,2836,2500,33662,26239,8,No major issues,8,Less than 50%
+Earthquake,Moderate,2024-07-24 14:46,34,-26.756,171.909,19383,13907,39112,33178,8,Shortage of medical supplies,6,Less than 50%
+Flood,Moderate,2024-03-07 11:59,58,71.357,-129.756,3820,2783,29872,23745,10,No major issues,3,Greater than 75%
+Tsunami,Mild,2024-03-24 23:12,12,-16.297,149.188,14582,10717,40285,33921,4,Shortage of perishable items,4,Less than 50%
+Tsunami,Severe,2023-10-21 13:02,43,-82.398,117.449,10958,8753,40372,30073,2,Shortage of perishable items,6,Less than 50%
+Flood,Severe,2024-05-02 16:29,42,-67.648,59.729,10426,8168,42236,37225,12,Shortage of perishable items,2,Less than 50%
+Tsunami,Moderate,2024-03-04 04:17,16,17.8,-49.767,16744,13614,26902,22210,9,Delay in transportation,7,Between 50% and 75%
+Flood,Severe,2024-06-25 14:58,13,62.15,-121.375,2917,2127,40214,35213,4,No major issues,4,Less than 50%
+Tsunami,Moderate,2024-08-19 22:48,38,24.524,163.856,2596,1967,44708,37008,3,Shortage of perishable items,12,Less than 50%
+Earthquake,Severe,2024-06-21 14:08,60,-59.916,-63.862,11361,9831,29731,22425,7,Delay in transportation,10,Between 50% and 75%
+Tsunami,Mild,2024-01-22 05:10,12,-65.349,-78.69,16889,13213,20684,14902,4,Shortage of perishable items,5,Between 50% and 75%
+Flood,Severe,2024-06-21 19:30,65,81.449,124.585,19058,16017,17468,13685,3,Delay in transportation,4,Less than 50%
+Tsunami,Moderate,2024-06-30 22:27,31,34.389,-129.955,15481,13591,49167,39560,7,Shortage of perishable items,6,Less than 50%
+Flood,Mild,2024-06-26 13:28,26,-66.831,69.928,8424,6414,23752,17244,3,Shortage of medical supplies,3,Less than 50%
+Earthquake,Moderate,2024-08-15 17:12,60,-12.375,-109.314,2074,1780,43651,35734,9,Delay in transportation,6,Less than 50%
+Earthquake,Moderate,2024-04-06 11:50,54,-88.151,-145.259,5056,4469,23461,19179,5,Shortage of perishable items,12,Less than 50%
+Earthquake,Mild,2024-05-17 16:04,21,62.255,159.064,19997,15389,20522,17875,11,Shortage of perishable items,10,Between 50% and 75%
+Earthquake,Mild,2024-03-13 19:42,64,14.064,-174.966,8110,6838,28471,20907,10,Delay in transportation,3,Less than 50%
+Flood,Severe,2024-02-14 17:01,42,-24.037,32.177,15406,12859,17033,12539,7,Shortage of medical supplies,8,Less than 50%
+Flood,Mild,2024-04-10 03:16,38,-69.688,174.461,5050,4005,44060,32039,7,No major issues,10,Greater than 75%
+Earthquake,Mild,2024-02-19 17:33,32,-1.132,-41.479,15973,13099,30447,25496,9,Shortage of perishable items,10,Between 50% and 75%
+Tsunami,Moderate,2023-10-27 16:33,24,64.219,142.112,16586,14725,34080,25078,12,Shortage of medical supplies,12,Less than 50%
+Tsunami,Moderate,2024-03-07 06:09,45,28.539,-149.398,5697,4437,48702,43613,4,Delay in transportation,7,Less than 50%
+Tsunami,Mild,2024-05-24 12:31,50,61.925,-34.456,8630,7487,42709,32275,11,No major issues,12,Between 50% and 75%
+Tsunami,Moderate,2023-10-19 01:20,54,18.57,-34.4,16877,13540,19658,16780,3,Delay in transportation,6,Between 50% and 75%
+Tsunami,Mild,2024-03-31 06:05,52,79.633,-169.3,2731,2365,42645,35635,4,Shortage of medical supplies,11,Greater than 75%
+Tsunami,Mild,2024-05-26 13:11,31,21.954,-145.32,3507,2918,44075,37618,9,Shortage of perishable items,6,Greater than 75%
+Tsunami,Moderate,2024-02-02 15:13,44,-42.9,-56.298,18712,15144,12070,10840,3,Shortage of medical supplies,9,Less than 50%
+Tsunami,Moderate,2024-08-01 21:57,41,-83.523,-116.327,10930,9584,20757,16570,4,No major issues,8,Between 50% and 75%
+Earthquake,Severe,2024-07-09 19:53,55,-1.7,19.362,18674,15208,41189,33464,4,Delay in transportation,8,Less than 50%
+Tsunami,Severe,2024-01-20 10:16,36,21.049,-53.005,10320,7885,11844,9689,4,No major issues,7,Greater than 75%
+Flood,Mild,2024-02-26 13:51,60,70.442,-57.148,4189,3291,33420,26147,2,Shortage of perishable items,5,Less than 50%
+Flood,Moderate,2024-03-13 08:00,49,-74.71,67.677,10991,7945,21126,14871,7,Delay in transportation,9,Greater than 75%
+Tsunami,Severe,2024-01-30 05:07,44,72.254,-84.017,16391,13401,30743,23842,8,No major issues,11,Less than 50%
+Tsunami,Mild,2024-07-06 03:45,56,31.52,-59.052,17474,15067,32252,23651,6,No major issues,8,Less than 50%
+Tsunami,Severe,2023-09-27 03:04,66,85.339,-152.884,18558,13785,27377,19424,11,Shortage of medical supplies,5,Greater than 75%
+Flood,Mild,2024-05-19 20:58,57,61.954,-145.896,12037,9083,47121,40535,9,Shortage of medical supplies,5,Less than 50%
+Earthquake,Severe,2024-06-16 19:00,64,-35.668,109.486,15185,12644,30535,22596,8,No major issues,11,Between 50% and 75%
+Tsunami,Severe,2024-06-04 13:16,60,8.561,137.123,17915,15631,47804,38235,12,Shortage of medical supplies,6,Greater than 75%
+Flood,Severe,2023-12-02 15:24,66,48.441,-23.859,19550,16526,13924,11201,7,Shortage of medical supplies,4,Less than 50%
+Earthquake,Severe,2024-05-27 11:07,55,47.795,123.884,14443,11030,14222,11758,8,No major issues,6,Greater than 75%
+Earthquake,Moderate,2024-07-28 02:26,55,18.222,-33.888,4721,3446,11815,8850,6,Shortage of medical supplies,9,Between 50% and 75%
+Tsunami,Moderate,2024-07-22 22:13,53,73.018,-107.283,9936,7226,26934,23107,6,Shortage of perishable items,12,Less than 50%
+Flood,Moderate,2024-06-20 00:27,62,-86.416,129.45,3750,2860,29528,25790,8,No major issues,12,Greater than 75%
